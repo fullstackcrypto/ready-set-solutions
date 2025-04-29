@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Ready-Set Solutions</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<header class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Contact Ready-Set Solutions</h1>
+    <p>Have questions? Let's get you started with a custom QR-powered project!</p>
+  </div>
+</header>
+
+<main class="services-section">
+  <h2>Send Us a Message</h2>
+  <form action="https://formsubmit.co/support@charleysllc.com" method="POST" class="contact-form">
+    <!-- Honeypot field to prevent spam -->
+    <input type="text" name="_honey" style="display:none">
+    
+    <!-- Disable CAPTCHA for easier submission -->
+    <input type="hidden" name="_captcha" value="false">
+    
+    <!-- Redirect to thank-you page after submit -->
+    <input type="hidden" name="_next=https://fullstackcrypto.github.io/ready-set-solutions/thank-you.html">
+    
+    <input type="text" name="Name" placeholder="Your Name" required>
+    <input type="email" name="Email" placeholder="Your Email" required>
+    <textarea name="Message" placeholder="How can we help you?" required></textarea>
+    <button type="submit" class="button">Send Message</button>
+  </form>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2025 Ready-Set Solutions. Powered by CHARLEY'S LLC.</p>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
