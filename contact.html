@@ -2,43 +2,102 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us – Ready-Set Solutions</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact & Booking | Ready-Set Outdoor</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffff44;
+    }
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #00ffff;
+    }
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 5px;
+      background: #111;
+      color: #fff;
+    }
+    input[type="submit"] {
+      background: #00ffff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    input[type="submit"]:hover {
+      background: #00dddd;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Ready-Set Outdoor</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="store.html">Store</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
 
-<header class="hero">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <h1>Contact Ready-Set Solutions</h1>
-    <p>Have questions? Let's get you started with a custom QR-powered project!</p>
-  </div>
-</header>
+  <section class="section-dark">
+    <h2>Request a Quote or Book a Visit</h2>
+    <p>Fill out the form below. You can upload a photo and request a preferred appointment day. We’ll reply promptly!</p>
 
-<main class="services-section">
-  <h2>Send Us a Message</h2>
-  <form action="https://formsubmit.co/support@charleysllc.com" method="POST" class="contact-form">
-    <!-- Honeypot field to prevent spam -->
-    <input type="text" name="_honey" style="display:none">
-    
-    <!-- Disable CAPTCHA for easier submission -->
-    <input type="hidden" name="_captcha" value="false">
-    
-    <!-- Redirect to thank-you page after submit -->
-    <input type="hidden" name="_next=https://fullstackcrypto.github.io/ready-set-solutions/thank-you.html">
-    
-    <input type="text" name="Name" placeholder="Your Name" required>
-    <input type="email" name="Email" placeholder="Your Email" required>
-    <textarea name="Message" placeholder="How can we help you?" required></textarea>
-    <button type="submit" class="button">Send Message</button>
-  </form>
-</main>
+    <form action="https://formsubmit.co/support@charleysllc.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_subject" value="New Quote Request from NeuraMatrix.ai">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="thank-you.html">
 
-<footer class="footer">
-  <p>&copy; 2025 Ready-Set Solutions. Powered by CHARLEY'S LLC.</p>
-</footer>
+      <label for="name">Full Name</label>
+      <input type="text" name="name" id="name" required>
 
-<script src="js/scripts.js"></script>
+      <label for="email">Email Address</label>
+      <input type="email" name="email" id="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="text" name="phone" id="phone" required>
+
+      <label for="service">Requested Service</label>
+      <select name="service" id="service">
+        <option value="">-- Select --</option>
+        <option>Rock Fountain Repair</option>
+        <option>Leak Sealing</option>
+        <option>Pump Replacement</option>
+        <option>Power Washing</option>
+        <option>Smart Timer Install</option>
+        <option>Other (describe below)</option>
+      </select>
+
+      <label for="preferred">Preferred Date or Time</label>
+      <input type="text" name="preferred" id="preferred" placeholder="Ex: This Friday after 2pm">
+
+      <label for="photo">Upload a Photo (optional)</label>
+      <input type="file" name="attachment" accept="image/*">
+
+      <label for="message">Additional Notes</label>
+      <textarea name="message" id="message" rows="4"></textarea>
+
+      <input type="submit" value="Send Request">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 NeuraMatrix.ai • Smart Outdoor Living by CHARLEY’S LLC | Chandler, AZ</p>
+    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • (480) 840-7177</p>
+  </footer>
 </body>
 </html>
