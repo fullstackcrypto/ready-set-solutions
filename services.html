@@ -1,136 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services – Ready-Set Solutions</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    .grid-wrap {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-      padding: 2rem 1rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .service-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid #00ffff33;
-      border-radius: 10px;
-      text-align: center;
-      padding: 2rem;
-      transition: 0.3s ease;
-    }
-    .service-card:hover {
-      background: rgba(255,255,255,0.1);
-      transform: translateY(-6px);
-    }
-    .service-card img {
-      width: 80px;
-      margin-bottom: 1rem;
-    }
-    .service-card h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.5rem;
-    }
-    .service-card p {
-      font-size: 0.95rem;
-      color: #ccc;
-      margin-bottom: 0.5rem;
-    }
-    .service-card ul {
-      text-align: left;
-      font-size: 0.9rem;
-      margin: 1rem 0;
-      padding-left: 1.2rem;
-    }
-    .button-group {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-    .button-group a {
-      display: inline-block;
-      padding: 0.5rem 1.25rem;
-      background: #00ffff;
-      color: #0a0a23;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-    .button-group a:hover {
-      background: #00b3b3;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Ready-Set Outdoor</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <h1>Ready-Set Outdoor</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="store.html">Store</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-<header class="hero">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <h1>Our Digital Services</h1>
-    <p>Built for bold brands, solo pros, and anyone who hustles smart.</p>
-  </div>
-</header>
+  <section class="section-dark">
+    <h2>Outdoor Water Feature Services</h2>
+    <p>Fast, reliable upgrades and repairs — all under $1,000. Choose a service below to get started.</p>
 
-<main>
-  <div class="grid-wrap">
-
-    <!-- Smart Business Card -->
-    <div class="service-card">
-      <img src="images/smartcard-icon.png" alt="Smart Card">
-      <h3>Smart Business Card</h3>
-      <p>A mobile page with QR, contact buttons, and your links.</p>
-      <ul>
-        <li>✓ Up to 5 contact/action links</li>
-        <li>✓ One-click call, email, socials</li>
-        <li>✓ QR code for print & sharing</li>
-      </ul>
-      <div class="button-group">
-        <a href="demo-card.html">View Demo</a>
-        <a href="contact.html">Request – $45</a>
+    <div class="service-list">
+      <div class="service">
+        <h3>Rock Fountain Repair</h3>
+        <p>Fix cracks, leaks, and replace seals or pumps. Includes cleaning and resealing.</p>
+        <p class="price">$450 – $850</p>
+      </div>
+      <div class="service">
+        <h3>Waterfall Leak Sealing</h3>
+        <p>Identify and fix slow leaks, reseal joints, and ensure proper flow.</p>
+        <p class="price">$500 – $950</p>
+      </div>
+      <div class="service">
+        <h3>Pump Replacement</h3>
+        <p>Remove faulty pump and install a new high-efficiency model.</p>
+        <p class="price">$350 – $700</p>
+      </div>
+      <div class="service">
+        <h3>Boulder Resetting</h3>
+        <p>Reposition or anchor decorative landscape rocks and boulders.</p>
+        <p class="price">$300 – $650</p>
+      </div>
+      <div class="service">
+        <h3>Pond Algae Cleaning</h3>
+        <p>Drain, scrub, sanitize, refill, and treat decorative ponds or water basins.</p>
+        <p class="price">$400 – $900</p>
       </div>
     </div>
 
-    <!-- Service Menu -->
-    <div class="service-card">
-      <img src="images/servicemenu-icon.png" alt="Service Menu">
-      <h3>Service Menu Page</h3>
-      <p>Showcase your services, pricing, and booking CTA.</p>
-      <ul>
-        <li>✓ Up to 6 services w/ pricing</li>
-        <li>✓ Logo, hours, and social links</li>
-        <li>✓ CTA and QR included</li>
-      </ul>
-      <div class="button-group">
-        <a href="demo-menu.html">View Demo</a>
-        <a href="contact.html">Request – $55</a>
-      </div>
+    <div class="cta-buttons">
+      <a href="contact.html" class="btn">Schedule a Quote</a>
     </div>
+  </section>
 
-    <!-- Affiliate Flyer -->
-    <div class="service-card">
-      <img src="images/affiliateflyer-icon.png" alt="Affiliate Flyer">
-      <h3>Affiliate Flyer Page</h3>
-      <p>Promote Amazon/PayPal products + install offers.</p>
-      <ul>
-        <li>✓ 1 product feature</li>
-        <li>✓ QR + order/install CTA</li>
-        <li>✓ Includes branding & contact</li>
-      </ul>
-      <div class="button-group">
-        <a href="demo-flyer.html">View Demo</a>
-        <a href="contact.html">Request – $65</a>
-      </div>
-    </div>
-
-  </div>
-</main>
-
-<footer class="footer">
-  <p>&copy; 2025 Ready-Set Solutions. Powered by CHARLEY'S LLC.</p>
-</footer>
-
+  <footer>
+    <p>&copy; 2024 NeuraMatrix.ai • Smart Outdoor Living by CHARLEY’S LLC | Chandler, AZ</p>
+    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • (480) 840-7177</p>
+  </footer>
 </body>
 </html>
