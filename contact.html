@@ -2,43 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact Us – Ready-Set Solutions</title>
-  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Ready-Set Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Rajdhani', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.85);
+      padding: 14px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #00ffff33;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      color: #00ffff;
+      margin: 0;
+    }
+    nav a {
+      color: #00ffff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00dddd;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #00ffff;
+      margin-bottom: 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    input, textarea {
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      font-family: inherit;
+      font-size: 1rem;
+    }
+    button {
+      background: #00ffff;
+      border: none;
+      padding: 14px;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+    button:hover {
+      background: #00dddd;
+    }
+    .footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #0a0a0a;
+      font-size: 0.85rem;
+      color: #777;
+    }
+    .footer a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Get in Touch</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="indoor.html">Indoor</a>
+      <a href="outdoor.html">Outdoor</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
 
-<header class="hero">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <h1>Contact Ready-Set Solutions</h1>
-    <p>Have questions? Let's get you started with a custom QR-powered project!</p>
-  </div>
-</header>
+  <section>
+    <h2>Contact Ready-Set Solutions</h2>
+    <form action="https://formsubmit.co/support@charleysllc.com" method="POST" enctype="multipart/form-data">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="Email" placeholder="Your Email" required>
+      <input type="text" name="Phone" placeholder="Phone Number (optional)">
+      <textarea name="Message" rows="5" placeholder="Tell us what you need help with..." required></textarea>
+      <label for="upload" style="font-size: 0.9rem; color: #ccc;">Upload photo (optional)</label>
+      <input type="file" name="attachment" accept="image/*">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://fullstackcrypto.github.io/ready-set-solutions/thank-you.html">
+      <button type="submit">Send Request</button>
+    </form>
+  </section>
 
-<main class="services-section">
-  <h2>Send Us a Message</h2>
-  <form action="https://formsubmit.co/support@charleysllc.com" method="POST" class="contact-form">
-    <!-- Honeypot field to prevent spam -->
-    <input type="text" name="_honey" style="display:none">
-    
-    <!-- Disable CAPTCHA for easier submission -->
-    <input type="hidden" name="_captcha" value="false">
-    
-    <!-- Redirect to thank-you page after submit -->
-    <input type="hidden" name="_next=https://fullstackcrypto.github.io/ready-set-solutions/thank-you.html">
-    
-    <input type="text" name="Name" placeholder="Your Name" required>
-    <input type="email" name="Email" placeholder="Your Email" required>
-    <textarea name="Message" placeholder="How can we help you?" required></textarea>
-    <button type="submit" class="button">Send Message</button>
-  </form>
-</main>
-
-<footer class="footer">
-  <p>&copy; 2025 Ready-Set Solutions. Powered by CHARLEY'S LLC.</p>
-</footer>
-
-<script src="js/scripts.js"></script>
+  <footer class="footer">
+    <p>&copy; 2025 Ready-Set Solutions | Chandler, AZ</p>
+    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • (480) 840-7177</p>
+  </footer>
 </body>
 </html>
