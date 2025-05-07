@@ -2,102 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact & Booking | Ready-Set Outdoor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – Ready-Set Outdoor</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
-    form {
-      max-width: 600px;
-      margin: 0 auto;
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px #00ffff44;
-    }
-    label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: bold;
-      color: #00ffff;
-    }
-    input, textarea, select {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 20px;
-      border: none;
-      border-radius: 5px;
-      background: #111;
+    body {
+      margin: 0;
+      font-family: 'Rajdhani', sans-serif;
+      background-color: #000;
       color: #fff;
     }
-    input[type="submit"] {
+    header {
+      background: #000;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      color: #00ffff;
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      color: #aaa;
+      font-size: 1.1rem;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #00ffff;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    input, textarea, button {
+      font-family: 'Rajdhani', sans-serif;
+      padding: 14px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    input, textarea {
+      background: #111;
+      color: #fff;
+      border: 1px solid #00ffff33;
+    }
+    input[type="file"] {
+      padding: 8px;
+    }
+    button {
       background: #00ffff;
       color: #000;
       font-weight: bold;
       cursor: pointer;
       transition: 0.3s ease;
     }
-    input[type="submit"]:hover {
+    button:hover {
       background: #00dddd;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #0a0a0a;
+      font-size: 0.85rem;
+      color: #777;
+    }
+    footer a {
+      color: #00ffff;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Ready-Set Outdoor</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="store.html">Store</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-  </header>
 
-  <section class="section-dark">
-    <h2>Request a Quote or Book a Visit</h2>
-    <p>Fill out the form below. You can upload a photo and request a preferred appointment day. We’ll reply promptly!</p>
+<header>
+  <h1>Contact Ready-Set Outdoor</h1>
+  <p>Have questions or want to schedule a service? Let’s get started.</p>
+</header>
 
-    <form action="https://formsubmit.co/support@charleysllc.com" method="POST" enctype="multipart/form-data">
-      <input type="hidden" name="_subject" value="New Quote Request from NeuraMatrix.ai">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="thank-you.html">
+<main>
+  <h2>Send Us a Message</h2>
+  <form action="https://formsubmit.co/support@charleysllc.com" method="POST" enctype="multipart/form-data">
+    <!-- Anti-spam -->
+    <input type="text" name="_honey" style="display:none">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://fullstackcrypto.github.io/ready-set-solutions/thank-you.html">
 
-      <label for="name">Full Name</label>
-      <input type="text" name="name" id="name" required>
+    <!-- Fields -->
+    <input type="text" name="Name" placeholder="Your Full Name" required>
+    <input type="email" name="Email" placeholder="Your Email Address" required>
+    <input type="tel" name="Phone" placeholder="Your Phone Number (optional)">
+    <input type="date" name="Preferred Date" placeholder="Preferred Date">
+    <label for="photo">Upload Photo (optional):</label>
+    <input type="file" name="attachment" accept="image/*">
+    <textarea name="Message" placeholder="Describe the service or issue..." rows="5" required></textarea>
 
-      <label for="email">Email Address</label>
-      <input type="email" name="email" id="email" required>
+    <button type="submit">Send Request</button>
+  </form>
+</main>
 
-      <label for="phone">Phone Number</label>
-      <input type="text" name="phone" id="phone" required>
+<footer>
+  <p>&copy; 2025 NeuraMatrix.ai • Smart Outdoor Living by CHARLEY’S LLC | Chandler, AZ</p>
+  <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • (480) 840-7177</p>
+</footer>
 
-      <label for="service">Requested Service</label>
-      <select name="service" id="service">
-        <option value="">-- Select --</option>
-        <option>Rock Fountain Repair</option>
-        <option>Leak Sealing</option>
-        <option>Pump Replacement</option>
-        <option>Power Washing</option>
-        <option>Smart Timer Install</option>
-        <option>Other (describe below)</option>
-      </select>
-
-      <label for="preferred">Preferred Date or Time</label>
-      <input type="text" name="preferred" id="preferred" placeholder="Ex: This Friday after 2pm">
-
-      <label for="photo">Upload a Photo (optional)</label>
-      <input type="file" name="attachment" accept="image/*">
-
-      <label for="message">Additional Notes</label>
-      <textarea name="message" id="message" rows="4"></textarea>
-
-      <input type="submit" value="Send Request">
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2024 NeuraMatrix.ai • Smart Outdoor Living by CHARLEY’S LLC | Chandler, AZ</p>
-    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • (480) 840-7177</p>
-  </footer>
 </body>
 </html>
