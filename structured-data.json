@@ -1,0 +1,189 @@
+{
+  "index": {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Ready-Set Solutions",
+    "image": "https://readyset.charleysllc.com/assets/logo.png",
+    "logo": "https://readyset.charleysllc.com/assets/logo.png",
+    "@id": "https://readyset.charleysllc.com",
+    "url": "https://readyset.charleysllc.com",
+    "telephone": "+14808407177",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Chandler, AZ",
+      "addressLocality": "Chandler",
+      "addressRegion": "AZ",
+      "postalCode": "85224",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 33.3062,
+      "longitude": -111.8413
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "07:00",
+        "closes": "18:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Saturday",
+        "opens": "08:00",
+        "closes": "14:00"
+      }
+    ],
+    "sameAs": [
+      "https://www.facebook.com/readysetsolutions",
+      "https://www.instagram.com/readysetsolutions",
+      "https://nextdoor.com/pages/ready-set-solutions-chandler-az/"
+    ],
+    "priceRange": "$150-$1000",
+    "servesCuisine": ["Smart Home Installation", "Water Feature Repair", "Landscape Lighting", "Security Systems"]
+  },
+  
+  "indoor": {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Ready-Set Solutions - Indoor Services",
+    "image": "https://readyset.charleysllc.com/assets/indoor-services.jpg",
+    "url": "https://readyset.charleysllc.com/indoor.html",
+    "telephone": "+14808407177",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chandler",
+      "addressRegion": "AZ",
+      "postalCode": "85224",
+      "addressCountry": "US"
+    },
+    "priceRange": "$150-$1000",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Indoor Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Smart Security Systems",
+            "description": "Professional installation of smart locks, cameras, and complete security systems for peace of mind.",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "250.00",
+                "maxPrice": "500.00",
+                "priceCurrency": "USD"
+              }
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Smart Thermostat Installation",
+            "description": "Modernize your home with energy-efficient smart thermostats and light switches.",
+            "offers": {
+              "@type": "Offer",
+              "price": "200.00",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "200.00",
+                "maxPrice": "500.00",
+                "priceCurrency": "USD"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "areaServed": ["Chandler", "Gilbert", "Mesa", "Tempe", "Scottsdale", "Phoenix"]
+  },
+  
+  "outdoor": {
+    "@context": "https://schema.org",
+    "@type": "HomeAndConstructionBusiness",
+    "name": "Ready-Set Solutions - Outdoor Services",
+    "image": "https://readyset.charleysllc.com/assets/outdoor-services.jpg",
+    "url": "https://readyset.charleysllc.com/outdoor.html",
+    "telephone": "+14808407177",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Chandler",
+      "addressRegion": "AZ",
+      "postalCode": "85224",
+      "addressCountry": "US"
+    },
+    "priceRange": "$250-$3000",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Outdoor Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Water Feature Repairs",
+            "description": "Expert restoration of fountains, waterfalls, and water features with our specialized repair services.",
+            "offers": {
+              "@type": "Offer",
+              "price": "450.00",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "450.00",
+                "maxPrice": "850.00",
+                "priceCurrency": "USD"
+              }
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Smart Irrigation Systems",
+            "description": "Water-saving irrigation controls with smartphone access. Save money while keeping your landscape healthy.",
+            "offers": {
+              "@type": "Offer",
+              "price": "250.00",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "250.00",
+                "maxPrice": "500.00",
+                "priceCurrency": "USD"
+              }
+            }
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Landscape Lighting",
+            "description": "Enhance your property's beauty and security with custom LED landscape lighting solutions.",
+            "offers": {
+              "@type": "Offer",
+              "price": "350.00",
+              "priceCurrency": "USD",
+              "priceSpecification": {
+                "@type": "PriceSpecification",
+                "minPrice": "350.00",
+                "maxPrice": "800.00",
+                "priceCurrency": "USD"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "areaServed": ["Chandler", "Gilbert", "Mesa", "Tempe", "Scottsdale", "Phoenix"]
+  }
+}
