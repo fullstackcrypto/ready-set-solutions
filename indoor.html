@@ -3,179 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Indoor Services | Ready-Set Solutions</title>
+  <meta name="description" content="Professional smart home installations in Chandler, AZ including security systems, thermostats, smart switches, and accessibility upgrades - all under $1,000.">
+  <meta name="keywords" content="smart home installation, smart security, smart thermostat, accessibility upgrades, Chandler AZ">
+  <meta name="author" content="Ready-Set Solutions">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Indoor Smart Home Services | Ready-Set Solutions">
+  <meta property="og:description" content="Professional smart home installations including security systems, thermostats, switches, and accessibility upgrades in Chandler, AZ.">
+  <meta property="og:image" content="https://readyset.charleysllc.com/assets/indoor-services-og.jpg">
+  <meta property="og:url" content="https://readyset.charleysllc.com/indoor.html">
+  <meta property="og:type" content="website">
+  
+  <title>Indoor Smart Home Services | Ready-Set Solutions</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Rajdhani', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header {
-      background: rgba(0, 0, 0, 0.85);
-      padding: 14px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #00ffff33;
-    }
-    header h1 {
-      font-size: 1.5rem;
-      color: #00ffff;
-      margin: 0;
-    }
-    nav a {
-      color: #00ffff;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #00dddd;
-    }
-    nav a.active {
-      text-decoration: underline;
-      text-underline-offset: 5px;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2 {
-      text-align: center;
-      color: #00ffff;
-      margin-bottom: 30px;
-      font-size: 2.2rem;
-      text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-    }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 30px;
-      margin-bottom: 40px;
-    }
-    .service {
-      background: #111;
-      border: 1px solid #00ffff22;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .service:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
-    }
-    .service h3 {
-      color: #00ffff;
-      margin-bottom: 15px;
-      font-size: 1.4rem;
-    }
-    .service p {
-      color: #ccc;
-      line-height: 1.6;
-      margin-bottom: 15px;
-    }
-    .price {
-      color: #00ffcc;
-      font-weight: bold;
-      margin-top: 15px;
-      font-size: 1.1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .price span.availability {
-      font-size: 0.8rem;
-      background: rgba(0, 255, 204, 0.15);
-      padding: 4px 8px;
-      border-radius: 20px;
-    }
-    .cta-buttons {
-      text-align: center;
-      margin-top: 50px;
-    }
-    .cta-buttons a {
-      padding: 14px 28px;
-      background: #00ffff;
-      color: #000;
-      text-decoration: none;
-      border-radius: 40px;
-      font-weight: bold;
-      transition: 0.3s ease;
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
-      display: inline-block;
-      margin: 0 10px;
-    }
-    .cta-buttons a:hover {
-      background: #00dddd;
-      transform: scale(1.05);
-    }
-    .testimonial {
-      background: rgba(255, 255, 255, 0.05);
-      padding: 25px;
-      border-radius: 10px;
-      margin: 50px auto;
-      max-width: 800px;
-      text-align: center;
-      position: relative;
-    }
-    .testimonial::before {
-      content: """;
-      position: absolute;
-      top: -20px;
-      left: 20px;
-      font-size: 80px;
-      color: rgba(0, 255, 255, 0.2);
-      font-family: serif;
-    }
-    .testimonial p {
-      font-style: italic;
-      margin-bottom: 15px;
-    }
-    .testimonial .author {
-      color: #00ffff;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background: #0a0a0a;
-      font-size: 0.85rem;
-      color: #777;
-      border-top: 1px solid rgba(0, 255, 255, 0.1);
-    }
-    footer a {
-      color: #00ffff;
-      text-decoration: none;
-    }
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        padding: 15px;
-      }
-      header h1 {
-        margin-bottom: 15px;
-      }
-      nav a {
-        margin: 0 10px;
-        font-size: 0.9rem;
-      }
-      .services-grid {
-        grid-template-columns: 1fr;
-      }
-      .service {
-        padding: 20px;
-      }
-      .cta-buttons a {
-        display: block;
-        margin: 10px auto;
-        max-width: 250px;
-      }
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -190,60 +39,205 @@
   </header>
 
   <section>
-    <h2>Premium Indoor Services</h2>
-
-    <div class="services-grid">
-      <div class="service">
-        <h3>Smart Thermostat & Switch Install</h3>
-        <p>Modernize your home with energy-efficient smart thermostats and light switches. Take control of your environment with voice commands and smartphone integration.</p>
-        <p class="price">$200 – $500 <span class="availability">Most Popular</span></p>
-      </div>
-
-      <div class="service">
-        <h3>Minor Remodel & Repair</h3>
-        <p>Refresh your living spaces with our professional repair services. We handle drywall patching, paint touch-ups, caulking, trim installation, and door repairs.</p>
-        <p class="price">$150 – $600 <span class="availability">Same-Week Service</span></p>
-      </div>
-
-      <div class="service">
-        <h3>Accessibility Upgrades</h3>
-        <p>Enhance home safety and independence with our accessibility modifications. We install grab bars, non-slip surfaces, and handheld showerheads for improved mobility.</p>
-        <p class="price">$300 – $850 <span class="availability">High Demand</span></p>
-      </div>
-
-      <div class="service">
-        <h3>Clutter Removal & Prep</h3>
-        <p>Reclaim your living space with our professional decluttering services. Perfect for property preparation, move-outs, staging, or giving your home a fresh start.</p>
-        <p class="price">$250 – $700 <span class="availability">48hr Service</span></p>
-      </div>
-
-      <div class="service">
-        <h3>Interior Leak Sensors</h3>
-        <p>Protect your home from water damage with smart leak detection. We install Wi-Fi sensors under sinks, near water heaters, and in bathrooms for early leak detection.</p>
-        <p class="price">$150 – $400 <span class="availability">Quick Install</span></p>
-      </div>
-      
-      <div class="service">
-        <h3>Smart Home Hub Integration</h3>
-        <p>Connect and control all your smart devices through a single, intuitive interface. We set up and configure complete home automation systems tailored to your lifestyle.</p>
-        <p class="price">$350 – $900 <span class="availability">Premium Service</span></p>
+    <h2>Premium Indoor Smart Home Services</h2>
+    <p class="text-center mb-4">Transform your Chandler home with professional smart technology installations and upgrades.</p>
+    
+    <!-- Featured Service - Smart Security -->
+    <div class="card mt-5 mb-5" id="security">
+      <h3 class="text-center">Featured Service: Smart Security Systems</h3>
+      <div class="grid-2">
+        <div>
+          <img src="assets/smart-security.jpg" alt="Smart security system installation" class="rounded shadow" style="width: 100%; height: auto;">
+        </div>
+        <div>
+          <h4>Complete Smart Security Solutions</h4>
+          <p>Protect your family, home, and property with professional security system installation. Perfect for homeowners and Airbnb hosts in the Chandler area.</p>
+          <ul>
+            <li>Smart doorbell cameras with motion detection</li>
+            <li>Indoor/outdoor security cameras with night vision</li>
+            <li>Smart locks with keycode and fingerprint access</li>
+            <li>Mobile alerts and 24/7 monitoring options</li>
+            <li>Full integration with smart home systems</li>
+          </ul>
+          <p class="price">$250 – $500 <span class="availability">Most Popular</span></p>
+          <div class="cta-buttons">
+            <a href="https://www.amazon.com/stores/page/68EFFCB1-507D-41E4-B221-E047D82CB3BE?tag=charleysllc-20" target="_blank" class="button">Shop Security Systems</a>
+            <a href="contact.html?service=Smart%20Security" class="button">Request Installation</a>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div class="testimonial">
-      <p>"The Ready-Set team installed smart switches and a thermostat in our home, and we couldn't be happier with the results. The technicians were knowledgeable, respectful of our space, and the smart features have made our home both more comfortable and energy-efficient."</p>
+    <div class="services-grid">
+      <div class="service" id="thermostat">
+        <h3>Smart Thermostat & Switch Install</h3>
+        <p>Modernize your home with energy-efficient smart thermostats and light switches. Take control of your environment with voice commands and smartphone integration.</p>
+        <ul class="mb-3">
+          <li>Compatible with Nest, Ecobee, and Honeywell systems</li>
+          <li>Voice control via Alexa, Google Home, or Apple HomeKit</li>
+          <li>Energy usage monitoring and optimization</li>
+        </ul>
+        <p class="price">$200 – $500 <span class="availability">Energy Saving</span></p>
+        <div class="text-center mt-3">
+          <a href="contact.html?service=Smart%20Thermostat" class="button">Request Service</a>
+        </div>
+      </div>
+
+      <div class="service" id="repairs">
+        <h3>Minor Remodel & Repair</h3>
+        <p>Refresh your living spaces with our professional repair services. We handle drywall patching, paint touch-ups, caulking, trim installation, and door repairs.</p>
+        <ul class="mb-3">
+          <li>Professional drywall repairs and patches</li>
+          <li>Trim and molding installation</li>
+          <li>Door repairs and hardware replacement</li>
+        </ul>
+        <p class="price">$150 – $600 <span class="availability">Same-Week Service</span></p>
+        <div class="text-center mt-3">
+          <a href="contact.html?service=Minor%20Repairs" class="button">Request Service</a>
+        </div>
+      </div>
+
+      <div class="service" id="accessibility">
+        <h3>Accessibility Upgrades</h3>
+        <p>Enhance home safety and independence with our accessibility modifications. We install grab bars, non-slip surfaces, and handheld showerheads for improved mobility.</p>
+        <ul class="mb-3">
+          <li>ADA-compliant grab bar installation</li>
+          <li>Non-slip surface applications</li>
+          <li>Shower and bathroom accessibility upgrades</li>
+        </ul>
+        <p class="price">$300 – $850 <span class="availability">Aging-in-Place</span></p>
+        <div class="text-center mt-3">
+          <a href="contact.html?service=Accessibility%20Upgrades" class="button">Request Service</a>
+        </div>
+      </div>
+
+      <div class="service" id="clutter">
+        <h3>Clutter Removal & Prep</h3>
+        <p>Reclaim your living space with our professional decluttering services. Perfect for property preparation, move-outs, staging, or giving your home a fresh start.</p>
+        <ul class="mb-3">
+          <li>Property staging preparation</li>
+          <li>Move-in/move-out cleaning</li>
+          <li>Garage and storage space organization</li>
+        </ul>
+        <p class="price">$250 – $700 <span class="availability">48hr Service</span></p>
+        <div class="text-center mt-3">
+          <a href="contact.html?service=Clutter%20Removal" class="button">Request Service</a>
+        </div>
+      </div>
+
+      <div class="service" id="leak-sensors">
+        <h3>Interior Leak Sensors</h3>
+        <p>Protect your home from water damage with smart leak detection. We install Wi-Fi sensors under sinks, near water heaters, and in bathrooms for early leak detection.</p>
+        <ul class="mb-3">
+          <li>Wi-Fi connected water leak sensors</li>
+          <li>Mobile alerts for early detection</li>
+          <li>Integration with smart home systems</li>
+        </ul>
+        <p class="price">$150 – $400 <span class="availability">Quick Install</span></p>
+        <div class="text-center mt-3">
+          <a href="contact.html?service=Leak%20Sensors" class="button">Request Service</a>
+        </div>
+      </div>
+      
+      <div class="service" id="smart-hub">
+        <h3>Smart Home Hub Integration</h3>
+        <p>Connect and control all your smart devices through a single, intuitive interface. We set up and configure complete home automation systems tailored to your lifestyle.</p>
+        <ul class="mb-3">
+          <li>Compatible with Alexa, Google Home, and HomeKit</li>
+          <li>Automated routines and scenes setup</li>
+          <li>Custom programming for specific needs</li>
+        </ul>
+        <p class="price">$350 – $900 <span class="availability">Premium Service</span></p>
+        <div class="text-center mt-3">
+          <a href="contact.html?service=Smart%20Hub%20Integration" class="button">Request Service</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="cta-section mt-5">
+      <div class="cta-container">
+        <h3>Smart Home Bundle Special</h3>
+        <p>Book any two smart home services together and save 10% on your total installation cost. Perfect for new homeowners or those looking to upgrade multiple systems at once.</p>
+        <div class="cta-buttons">
+          <a href="contact.html?service=Smart%20Home%20Bundle" class="cta-button">Get Bundle Pricing</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial mt-5">
+      <p>"The Ready-Set team installed smart switches, a smart thermostat, and a security system in our home, and we couldn't be happier with the results. The technicians were knowledgeable, respectful of our space, and the smart features have made our home both more comfortable and energy-efficient."</p>
       <div class="author">- Michael T., Chandler Heights</div>
     </div>
 
-    <div class="cta-buttons">
-      <a href="contact.html">Request Free Quote</a>
-      <a href="https://calendly.com/readysetsolutions" target="_blank">Schedule Consultation</a>
+    <div class="cta-buttons mt-5">
+      <a href="contact.html" class="cta-button">Request Free Quote</a>
+      <a href="https://calendly.com/readysetsolutions" target="_blank" class="cta-button outline">Schedule Consultation</a>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="bg-card rounded p-4 mt-5">
+    <h2>Frequently Asked Questions</h2>
+    
+    <div class="mt-4">
+      <h4>Which smart home systems do you support?</h4>
+      <p>We work with all major smart home ecosystems including Amazon Alexa, Google Home, Apple HomeKit, and Samsung SmartThings. Our technicians are certified in installation and setup for most major brands including Ring, Nest, Ecobee, Honeywell, and more.</p>
+    </div>
+    
+    <div class="mt-4">
+      <h4>How long does a typical smart home installation take?</h4>
+      <p>Most individual smart home installations (like thermostats or doorbell cameras) take 1-2 hours. More comprehensive systems like whole-home security can take 3-4 hours. We work efficiently to minimize disruption to your day.</p>
+    </div>
+    
+    <div class="mt-4">
+      <h4>Do I need to provide the smart home equipment?</h4>
+      <p>You have options! You can purchase your own equipment, and we'll install it for you. Alternatively, we can recommend the best products for your needs and provide them as part of our installation package. We also offer links to trusted products through our Amazon affiliate store.</p>
+    </div>
+    
+    <div class="mt-4">
+      <h4>Do you offer support after installation?</h4>
+      <p>Yes! We provide a 30-day support period after installation where we'll help troubleshoot any issues that arise. We also offer extended support plans for more comprehensive assistance.</p>
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Ready-Set Solutions • Indoor Services by CHARLEY'S LLC | Chandler, AZ</p>
-    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • (480) 840-7177</p>
+    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • <a href="tel:+14808407177">(480) 840-7177</a></p>
   </footer>
+  
+  <script>
+    // Check for service parameter in URL to auto-scroll to relevant section
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const serviceParam = urlParams.get('service');
+      
+      if (serviceParam) {
+        const serviceMap = {
+          'security': 'security',
+          'thermostat': 'thermostat',
+          'repairs': 'repairs',
+          'accessibility': 'accessibility',
+          'clutter': 'clutter',
+          'leak': 'leak-sensors',
+          'smart-hub': 'smart-hub'
+        };
+        
+        // Look for partial matches in our service map
+        for (const [key, value] of Object.entries(serviceMap)) {
+          if (serviceParam.toLowerCase().includes(key.toLowerCase())) {
+            const element = document.getElementById(value);
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              element.classList.add('highlight');
+              setTimeout(() => {
+                element.classList.remove('highlight');
+              }, 2000);
+              break;
+            }
+          }
+        }
+      }
+    });
+  </script>
 </body>
 </html>
