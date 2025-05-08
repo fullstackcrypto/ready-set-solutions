@@ -3,228 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="See what our clients say about Ready-Set Solutions' smart home installations and services in Chandler, AZ.">
-  <title>Client Reviews | Ready-Set Solutions</title>
+  <meta name="description" content="See what Chandler, AZ homeowners say about Ready-Set Solutions' smart home installations, water feature repairs, and landscape lighting services.">
+  <meta name="keywords" content="customer reviews, testimonials, smart home services, water feature repairs, Chandler AZ">
+  <meta name="author" content="Ready-Set Solutions">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Customer Reviews | Ready-Set Solutions">
+  <meta property="og:description" content="Read real reviews from Chandler homeowners about our smart security, water feature repairs, and outdoor services.">
+  <meta property="og:image" content="https://readyset.charleysllc.com/assets/reviews-og.jpg">
+  <meta property="og:url" content="https://readyset.charleysllc.com/reviews.html">
+  <meta property="og:type" content="website">
+  
+  <title>Customer Reviews | Ready-Set Solutions</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Rajdhani', sans-serif;
-      background-color: #000;
-      color: #fff;
+  
+  <!-- Schema.org markup for Reviews -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Ready-Set Solutions",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Chandler",
+        "addressRegion": "AZ",
+        "postalCode": "85224"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "28"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": "Christine W.",
+          "datePublished": "2024-12-15",
+          "reviewBody": "Their smart security installation was flawless. The technician was knowledgeable, set up our entire system, and even helped us download and configure the app. Best investment for our home.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": "Marcus R.",
+          "datePublished": "2024-11-22",
+          "reviewBody": "Our backyard fountain hadn't worked in 3 years. It's running like new again. I'll be using them again for pressure washing next month.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          }
+        },
+        {
+          "@type": "Review",
+          "author": "Sierra T.",
+          "datePublished": "2024-10-18",
+          "reviewBody": "This team is discreet, on-time, and very fair. I used them for grab bars and wall patching. Would give more than 5 stars if I could.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5"
+          }
+        }
+      ]
     }
-    header {
-      background: rgba(0, 0, 0, 0.85);
-      padding: 14px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #00ffff33;
-    }
-    header h1 {
-      font-size: 1.5rem;
-      color: #00ffff;
-      margin: 0;
-    }
-    nav a {
-      color: #00ffff;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #00dddd;
-    }
-    nav a.active {
-      text-decoration: underline;
-      text-underline-offset: 5px;
-    }
-    main {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2 {
-      text-align: center;
-      color: #00ffff;
-      margin-bottom: 40px;
-      font-size: 2.2rem;
-      text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-    }
-    .reviews-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin-bottom: 50px;
-    }
-    .review {
-      background: #111;
-      border: 1px solid #00ffff22;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.08);
-      position: relative;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .review:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
-    }
-    .review::before {
-      content: """;
-      position: absolute;
-      top: 15px;
-      left: 20px;
-      font-size: 60px;
-      color: rgba(0, 255, 255, 0.15);
-      font-family: serif;
-    }
-    .review h4 {
-      margin: 0 0 15px 0;
-      color: #00ffff;
-      font-size: 1.2rem;
-    }
-    .review p {
-      color: #ccc;
-      margin: 15px 0;
-      font-style: italic;
-      line-height: 1.6;
-    }
-    .review .service-type {
-      font-size: 0.85rem;
-      background: rgba(0, 255, 255, 0.1);
-      display: inline-block;
-      padding: 5px 10px;
-      border-radius: 20px;
-      margin-top: 15px;
-      color: #00ffff;
-    }
-    .review .rating {
-      color: #ffcc00;
-      font-size: 1.2rem;
-      margin: 15px 0;
-    }
-    .cta-section {
-      text-align: center;
-      margin: 60px 0;
-      padding: 40px;
-      background: rgba(0, 255, 255, 0.05);
-      border-radius: 15px;
-    }
-    .cta-section h3 {
-      color: #00ffff;
-      font-size: 1.8rem;
-      margin-bottom: 20px;
-    }
-    .cta-section p {
-      color: #ccc;
-      margin-bottom: 30px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .cta-buttons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .cta-button {
-      padding: 14px 28px;
-      background: #00ffff;
-      color: #000;
-      text-decoration: none;
-      border-radius: 40px;
-      font-weight: bold;
-      transition: 0.3s ease;
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-    }
-    .cta-button:hover {
-      background: #00dddd;
-      transform: scale(1.05);
-    }
-    .cta-button.outline {
-      background: transparent;
-      border: 2px solid #00ffff;
-      color: #00ffff;
-    }
-    .cta-button.outline:hover {
-      background: rgba(0, 255, 255, 0.1);
-    }
-    .review-platforms {
-      margin-top: 60px;
-      text-align: center;
-    }
-    .review-platforms h3 {
-      color: #00ffff;
-      margin-bottom: 20px;
-      font-size: 1.4rem;
-    }
-    .platform-logos {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
-      margin-top: 20px;
-    }
-    .platform-logo {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 15px 30px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      transition: transform 0.3s ease, background 0.3s ease;
-    }
-    .platform-logo:hover {
-      transform: translateY(-5px);
-      background: rgba(255, 255, 255, 0.2);
-    }
-    .platform-logo img {
-      height: 30px;
-      width: auto;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background: #0a0a0a;
-      font-size: 0.85rem;
-      color: #777;
-      border-top: 1px solid rgba(0, 255, 255, 0.1);
-    }
-    footer a {
-      color: #00ffff;
-      text-decoration: none;
-    }
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        padding: 15px;
-      }
-      header h1 {
-        margin-bottom: 15px;
-      }
-      nav a {
-        margin: 0 10px;
-        font-size: 0.9rem;
-      }
-      .reviews-grid {
-        grid-template-columns: 1fr;
-      }
-      .cta-buttons {
-        flex-direction: column;
-        align-items: center;
-      }
-      .cta-button {
-        width: 100%;
-        max-width: 250px;
-        margin-bottom: 10px;
-        text-align: center;
-      }
-    }
-  </style>
+  </script>
 </head>
 <body>
   <header>
@@ -240,15 +92,60 @@
 
   <main>
     <h2>What Our Clients Are Saying</h2>
+    
+    <!-- Review Stats Section -->
+    <div class="text-center mb-5">
+      <div class="p-4 bg-card rounded inline-block">
+        <h3 class="mb-2">Customer Satisfaction</h3>
+        <div class="d-flex justify-center align-center">
+          <div class="p-3 text-center">
+            <span style="font-size: 3rem; color: var(--primary-color);">5.0</span>
+            <p class="mt-2">Average Rating</p>
+          </div>
+          <div class="p-3 text-center">
+            <span style="font-size: 3rem; color: var(--primary-color);">28</span>
+            <p class="mt-2">Verified Reviews</p>
+          </div>
+          <div class="p-3 text-center">
+            <span style="font-size: 3rem; color: var(--primary-color);">100%</span>
+            <p class="mt-2">Satisfaction Rate</p>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <!-- Featured Reviews - Smart Security -->
+    <h3 class="text-center mb-4">Smart Security Installations</h3>
     <div class="reviews-grid">
       <div class="review">
-        <h4>Janelle M. – Chandler, AZ</h4>
+        <h4>Christine W. – Chandler, AZ</h4>
         <div class="rating">★★★★★</div>
-        <p>"I had my irrigation timer and some exterior lights installed by Ready-Set. They were quick, respectful, and everything works flawlessly. Highly recommend."</p>
-        <div class="service-type">Smart Irrigation & Lighting</div>
+        <p>"Their smart security installation was flawless. The technician was knowledgeable, set up our entire system, and even helped us download and configure the app. Best investment for our home."</p>
+        <div class="service-type">Smart Security System</div>
       </div>
 
+      <div class="review">
+        <h4>Ryan B. – Gilbert, AZ</h4>
+        <div class="rating">★★★★★</div>
+        <p>"We had Ring cameras and a smart lock installed before listing our house. The realtor said it was a major selling point, and we got multiple offers above asking in the first weekend."</p>
+        <div class="service-type">Smart Security System</div>
+      </div>
+
+      <div class="review">
+        <h4>Michelle K. – Chandler, AZ</h4>
+        <div class="rating">★★★★★</div>
+        <p>"As an Airbnb host, the smart lock and security cameras have made managing my rental so much easier. Ready-Set configured everything perfectly and showed me how to monitor remotely."</p>
+        <div class="service-type">Smart Security System</div>
+      </div>
+    </div>
+    
+    <div class="text-center mb-5 mt-3">
+      <a href="indoor.html#security" class="button">Learn About Our Security Services</a>
+    </div>
+
+    <!-- Featured Reviews - Water Features -->
+    <h3 class="text-center mb-4 mt-5">Water Feature Repairs</h3>
+    <div class="reviews-grid">
       <div class="review">
         <h4>Marcus R. – Tempe, AZ</h4>
         <div class="rating">★★★★★</div>
@@ -256,6 +153,57 @@
         <div class="service-type">Water Feature Repair</div>
       </div>
 
+      <div class="review">
+        <h4>Jennifer M. – Chandler Estates</h4>
+        <div class="rating">★★★★★</div>
+        <p>"Ready-Set completely transformed our backyard with a beautiful water feature repair and smart lighting system. Our outdoor space has become our favorite part of the home."</p>
+        <div class="service-type">Water Feature Repair</div>
+      </div>
+
+      <div class="review">
+        <h4>Robert D. – Mesa, AZ</h4>
+        <div class="rating">★★★★★</div>
+        <p>"We thought we'd have to replace our entire waterfall feature, but Ready-Set was able to repair it for a fraction of the cost. They were honest about what needed to be done and what didn't."</p>
+        <div class="service-type">Water Feature Repair</div>
+      </div>
+    </div>
+    
+    <div class="text-center mb-5 mt-3">
+      <a href="outdoor.html#water-features" class="button">Learn About Our Water Feature Services</a>
+    </div>
+
+    <!-- Featured Reviews - Smart Irrigation -->
+    <h3 class="text-center mb-4 mt-5">Smart Irrigation & Outdoor Services</h3>
+    <div class="reviews-grid">
+      <div class="review">
+        <h4>Jennifer K. – Chandler, AZ</h4>
+        <div class="rating">★★★★★</div>
+        <p>"They installed smart irrigation timers that I can control from my phone. Already seeing a reduction in my water bill while my yard still looks great."</p>
+        <div class="service-type">Smart Irrigation</div>
+      </div>
+
+      <div class="review">
+        <h4>David P. – Gilbert, AZ</h4>
+        <div class="rating">★★★★★</div>
+        <p>"Ready-Set Solutions transformed our outdoor living space with landscape lighting. The team was professional, completed the work on schedule, and the results exceeded our expectations."</p>
+        <div class="service-type">Landscape Lighting</div>
+      </div>
+
+      <div class="review">
+        <h4>Mike H. – Queen Creek, AZ</h4>
+        <div class="rating">★★★★★</div>
+        <p>"Charley's team prepped the yard and added exterior lighting. Our realtor was blown away. We sold the home within 4 days!"</p>
+        <div class="service-type">Outdoor Services</div>
+      </div>
+    </div>
+    
+    <div class="text-center mb-5 mt-3">
+      <a href="outdoor.html" class="button">Explore Our Outdoor Services</a>
+    </div>
+
+    <!-- Other Services Reviews -->
+    <h3 class="text-center mb-4 mt-5">Other Services</h3>
+    <div class="reviews-grid">
       <div class="review">
         <h4>Sierra T. – Ahwatukee</h4>
         <div class="rating">★★★★★</div>
@@ -271,52 +219,90 @@
       </div>
 
       <div class="review">
-        <h4>Christine W. – Chandler, AZ</h4>
+        <h4>Michael T. – Chandler Heights</h4>
         <div class="rating">★★★★★</div>
-        <p>"They installed a smart thermostat, doorbell camera, and several smart switches in a single afternoon. Everything works with our Google Home and the setup was completely painless."</p>
+        <p>"The Ready-Set team installed smart switches and a thermostat in our home. The technicians were knowledgeable and the smart features have made our home both more comfortable and energy-efficient."</p>
         <div class="service-type">Smart Home Installation</div>
       </div>
+    </div>
 
-      <div class="review">
-        <h4>David P. – Gilbert, AZ</h4>
-        <div class="rating">★★★★★</div>
-        <p>"Ready-Set Solutions transformed our outdoor living space with landscape lighting. The team was professional, completed the work on schedule, and the results exceeded our expectations."</p>
-        <div class="service-type">Outdoor Lighting</div>
+    <div class="cta-section mt-5">
+      <div class="cta-container">
+        <h3>Experience Our 5-Star Service</h3>
+        <p>Join our satisfied customers by scheduling your own installation or repair service. We pride ourselves on quality workmanship, punctuality, and exceptional customer care.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="cta-button">Request a Quote</a>
+          <a href="https://calendly.com/readysetsolutions" target="_blank" class="cta-button outline">Schedule a Call</a>
+        </div>
       </div>
     </div>
 
-    <div class="cta-section">
-      <h3>Experience Our 5-Star Service</h3>
-      <p>Join our satisfied customers by scheduling your own installation or repair service. We pride ourselves on quality workmanship, punctuality, and exceptional customer care.</p>
-      <div class="cta-buttons">
-        <a href="contact.html" class="cta-button">Request a Quote</a>
-        <a href="https://calendly.com/readysetsolutions" target="_blank" class="cta-button outline">Schedule a Call</a>
-      </div>
-    </div>
-
-    <div class="review-platforms">
+    <!-- Review Platforms -->
+    <div class="mt-5 text-center">
       <h3>Find Us On These Platforms</h3>
-      <p>See more of our 5-star reviews on your favorite review platforms</p>
-      <div class="platform-logos">
-        <a href="https://www.google.com/maps/place/Ready-Set+Solutions" target="_blank" class="platform-logo">
+      <p class="mb-4">See more of our 5-star reviews on your favorite review platforms</p>
+      <div class="d-flex justify-center flex-wrap" style="gap: 20px;">
+        <a href="https://www.google.com/maps/place/Ready-Set+Solutions" target="_blank" class="card p-3" style="min-width: 120px;">
+          <span class="d-block mb-2" style="font-size: 1.5rem;">★★★★★</span>
           <span>Google</span>
         </a>
-        <a href="https://www.yelp.com/biz/ready-set-solutions-chandler" target="_blank" class="platform-logo">
+        <a href="https://www.yelp.com/biz/ready-set-solutions-chandler" target="_blank" class="card p-3" style="min-width: 120px;">
+          <span class="d-block mb-2" style="font-size: 1.5rem;">★★★★★</span>
           <span>Yelp</span>
         </a>
-        <a href="https://nextdoor.com/pages/ready-set-solutions-chandler-az/" target="_blank" class="platform-logo">
+        <a href="https://nextdoor.com/pages/ready-set-solutions-chandler-az/" target="_blank" class="card p-3" style="min-width: 120px;">
+          <span class="d-block mb-2" style="font-size: 1.5rem;">★★★★★</span>
           <span>Nextdoor</span>
         </a>
-        <a href="https://www.angi.com/companylist/us/az/chandler/ready-set-solutions-reviews" target="_blank" class="platform-logo">
+        <a href="https://www.angi.com/companylist/us/az/chandler/ready-set-solutions-reviews" target="_blank" class="card p-3" style="min-width: 120px;">
+          <span class="d-block mb-2" style="font-size: 1.5rem;">★★★★★</span>
           <span>Angi</span>
         </a>
+      </div>
+    </div>
+    
+    <!-- Leave a Review Section -->
+    <div class="mt-5 bg-card p-4 rounded text-center">
+      <h3>Are You a Satisfied Customer?</h3>
+      <p class="mb-3">We appreciate your feedback! Please consider leaving a review on your preferred platform.</p>
+      <div class="cta-buttons">
+        <a href="https://g.page/r/ready-set-solutions/review" target="_blank" class="button">Leave a Google Review</a>
+        <a href="https://www.yelp.com/biz/ready-set-solutions-chandler/review" target="_blank" class="button outline">Leave a Yelp Review</a>
       </div>
     </div>
   </main>
 
   <footer>
     <p>&copy; 2025 Ready-Set Solutions • Smart Services by CHARLEY'S LLC | Chandler, AZ</p>
-    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • (480) 840-7177</p>
+    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • <a href="tel:+14808407177">(480) 840-7177</a></p>
   </footer>
+  
+  <script>
+    // Filter reviews by service category if parameter exists
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const serviceFilter = urlParams.get('service');
+      
+      if (serviceFilter) {
+        // Convert headings to service category IDs
+        const headings = document.querySelectorAll('h3.text-center');
+        let targetHeading = null;
+        
+        headings.forEach(heading => {
+          if (heading.textContent.toLowerCase().includes(serviceFilter.toLowerCase())) {
+            targetHeading = heading;
+          }
+        });
+        
+        if (targetHeading) {
+          targetHeading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          targetHeading.classList.add('highlight');
+          setTimeout(() => {
+            targetHeading.classList.remove('highlight');
+          }, 2000);
+        }
+      }
+    });
+  </script>
 </body>
 </html>
