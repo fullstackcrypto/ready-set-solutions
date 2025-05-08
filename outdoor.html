@@ -1,66 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<<<<<<< HEAD
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Services – Ready-Set Solutions</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    .services-container {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-      padding: 2rem 1rem;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .service-card {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid #00ffff33;
-      border-radius: 12px;
-      max-width: 360px;
-      padding: 1.5rem;
-      color: #fff;
-    }
-    .service-card img {
-      width: 100%;
-      margin: 1rem 0;
-      border-radius: 8px;
-    }
-    .service-card h3 {
-      font-size: 1.6rem;
-      color: #00ffff;
-    }
-    .service-card p {
-      font-size: 0.95rem;
-      line-height: 1.4;
-      margin-bottom: 0.5rem;
-    }
-    .service-card ul {
-      margin: 1rem 0;
-      padding-left: 1.2rem;
-      font-size: 0.9rem;
-    }
-    .cta-buttons {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-    .cta-buttons a {
-      background: #00ffff;
-      color: #000;
-      text-align: center;
-      padding: 0.5rem;
-      font-weight: bold;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    .cta-buttons a:hover {
-      background: #00b3b3;
-=======
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Outdoor Services | Ready-Set Solutions</title>
@@ -94,36 +34,68 @@
     nav a:hover {
       color: #00dddd;
     }
+    nav a.active {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
     section {
       padding: 60px 20px;
-      max-width: 800px;
+      max-width: 1100px;
       margin: auto;
     }
     h2 {
       text-align: center;
       color: #00ffff;
       margin-bottom: 30px;
+      font-size: 2.2rem;
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 40px;
     }
     .service {
       background: #111;
       border: 1px solid #00ffff22;
-      padding: 20px;
+      padding: 25px;
       border-radius: 10px;
-      margin-bottom: 30px;
-      box-shadow: 0 0 12px #00ffff22;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
     }
     .service h3 {
       color: #00ffff;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      font-size: 1.4rem;
+    }
+    .service p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 15px;
     }
     .price {
       color: #00ffcc;
       font-weight: bold;
-      margin-top: 10px;
+      margin-top: 15px;
+      font-size: 1.1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .price span.availability {
+      font-size: 0.8rem;
+      background: rgba(0, 255, 204, 0.15);
+      padding: 4px 8px;
+      border-radius: 20px;
     }
     .cta-buttons {
       text-align: center;
-      margin-top: 40px;
+      margin-top: 50px;
     }
     .cta-buttons a {
       padding: 14px 28px;
@@ -133,11 +105,39 @@
       border-radius: 40px;
       font-weight: bold;
       transition: 0.3s ease;
-      box-shadow: 0 0 15px #00ffff66;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+      display: inline-block;
+      margin: 0 10px;
     }
     .cta-buttons a:hover {
       background: #00dddd;
       transform: scale(1.05);
+    }
+    .testimonial {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 10px;
+      margin: 50px auto;
+      max-width: 800px;
+      text-align: center;
+      position: relative;
+    }
+    .testimonial::before {
+      content: """;
+      position: absolute;
+      top: -20px;
+      left: 20px;
+      font-size: 80px;
+      color: rgba(0, 255, 255, 0.2);
+      font-family: serif;
+    }
+    .testimonial p {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+    .testimonial .author {
+      color: #00ffff;
+      font-weight: bold;
     }
     footer {
       text-align: center;
@@ -145,83 +145,39 @@
       background: #0a0a0a;
       font-size: 0.85rem;
       color: #777;
+      border-top: 1px solid rgba(0, 255, 255, 0.1);
     }
     footer a {
       color: #00ffff;
       text-decoration: none;
->>>>>>> f838db0e378c6d0906a522d336fc940cb7f5ed7c
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 15px;
+      }
+      header h1 {
+        margin-bottom: 15px;
+      }
+      nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+      }
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+      .service {
+        padding: 20px;
+      }
+      .cta-buttons a {
+        display: block;
+        margin: 10px auto;
+        max-width: 250px;
+      }
     }
   </style>
 </head>
 <body>
-<<<<<<< HEAD
-
-<header class="hero">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <h1>Choose Your Service</h1>
-    <p>Built fast. Priced right. Designed to grow your business.</p>
-  </div>
-</header>
-
-<main class="services-container">
-
-  <!-- Smart Business Card -->
-  <div class="service-card">
-    <h3>Smart Business Card</h3>
-    <p>Create a mobile-optimized profile with all your contact options, links, and a QR code. Perfect for solo pros, networkers, and service providers.</p>
-    <ul>
-      <li>Up to 5 contact or social links</li>
-      <li>Tap-to-call, tap-to-book, tap-to-email</li>
-      <li>Includes custom QR for print or sharing</li>
-    </ul>
-    <p><strong>Price:</strong> $45 — ready in 24–48 hours.</p>
-    <div class="cta-buttons">
-      <a href="demo-card.html">View Example</a>
-      <a href="https://paypal.me/charleysllc/45" target="_blank">Pay Now – $45</a>
-    </div>
-  </div>
-
-  <!-- Service Menu Page -->
-  <div class="service-card">
-    <h3>Service Menu Page</h3>
-    <p>A branded page to showcase your services and pricing with call-to-action buttons for bookings or contact. Works great for barbers, cleaners, and mobile pros.</p>
-    <ul>
-      <li>Up to 6 services with pricing & descriptions</li>
-      <li>Includes business name, logo & contact links</li>
-      <li>CTA button + mobile-optimized layout</li>
-    </ul>
-    <p><strong>Price:</strong> $55 — ready in 48–72 hours.</p>
-    <div class="cta-buttons">
-      <a href="demo-menu.html">View Example</a>
-      <a href="https://paypal.me/charleysllc/55" target="_blank">Pay Now – $55</a>
-    </div>
-  </div>
-
-  <!-- Affiliate Flyer Page -->
-  <div class="service-card">
-    <h3>Affiliate Flyer Page</h3>
-    <p>Promote any Amazon or PayPal product with your own branded flyer page and install CTA. Great for content creators, installers, and passive income pros.</p>
-    <img src="images/flyer-mockup.png" alt="Flyer Example">
-    <ul>
-      <li>One featured product with link (Amazon/PayPal)</li>
-      <li>Your contact & QR for scan-and-buy</li>
-      <li>Install CTA for service upsell</li>
-    </ul>
-    <p><strong>Price:</strong> $65 — ready in 24 hours.</p>
-    <div class="cta-buttons">
-      <a href="demo-flyer.html">View Example</a>
-      <a href="https://paypal.me/charleysllc/65" target="_blank">Pay Now – $65</a>
-    </div>
-  </div>
-
-</main>
-
-<footer class="footer">
-  <p>&copy; 2025 Ready-Set Solutions. Powered by CHARLEY'S LLC.</p>
-</footer>
-
-=======
   <header>
     <h1>Ready-Set Outdoor</h1>
     <nav>
@@ -234,47 +190,60 @@
   </header>
 
   <section>
-    <h2>Outdoor Services</h2>
+    <h2>Premium Outdoor Services</h2>
 
-    <div class="service">
-      <h3>Waterfall + Fountain Repair</h3>
-      <p>Seal cracks, replace pumps, clear lines, and restore water flow fast and affordably.</p>
-      <p class="price">$450 – $850</p>
+    <div class="services-grid">
+      <div class="service">
+        <h3>Waterfall + Fountain Repair</h3>
+        <p>Restore the serenity of your outdoor space with our expert fountain repair services. We seal cracks, replace pumps, clear lines, and restore water flow efficiently and affordably.</p>
+        <p class="price">$450 – $850 <span class="availability">Same-Week Availability</span></p>
+      </div>
+
+      <div class="service">
+        <h3>Gravel Refresh & Rock Border Redesign</h3>
+        <p>Transform your yard's appearance with our gravel refresh and border redesign services. We fix weed barriers, add fresh gravel, compact surfaces, and create stylish new border layouts.</p>
+        <p class="price">$300 – $950 <span class="availability">Most Popular</span></p>
+      </div>
+
+      <div class="service">
+        <h3>Smart Irrigation Timer Install</h3>
+        <p>Take control of your landscape irrigation with Wi-Fi enabled smart timers. Control watering schedules from your smartphone and reduce water usage with precision technology.</p>
+        <p class="price">$250 – $500 <span class="availability">High Demand</span></p>
+      </div>
+
+      <div class="service">
+        <h3>Low-Voltage Lighting Installation</h3>
+        <p>Enhance your outdoor aesthetics while improving security with energy-efficient LED lighting. Highlight walkways, architectural features, and landscaping with smart or solar options.</p>
+        <p class="price">$350 – $800 <span class="availability">Available Now</span></p>
+      </div>
+
+      <div class="service">
+        <h3>Power Washing & Surface Cleaning</h3>
+        <p>Revitalize your outdoor surfaces with our professional power washing services. We clean patios, tile, stucco, walls, and driveways using commercial-grade equipment.</p>
+        <p class="price">$250 – $600 <span class="availability">48hr Service</span></p>
+      </div>
+      
+      <div class="service">
+        <h3>Custom Water Feature Installation</h3>
+        <p>Create a tranquil outdoor oasis with a custom-designed water feature. From simple fountains to elaborate cascading waterfalls, we bring the relaxing sound of water to your yard.</p>
+        <p class="price">$800 – $3,000 <span class="availability">Premium Service</span></p>
+      </div>
     </div>
 
-    <div class="service">
-      <h3>Gravel Refresh & Rock Border Redesign</h3>
-      <p>Weed barrier fix, gravel top-off, compacting, or full border layout redesigns.</p>
-      <p class="price">$300 – $950</p>
-    </div>
-
-    <div class="service">
-      <h3>Smart Irrigation Timer Install</h3>
-      <p>Install and sync Wi-Fi irrigation timers with mobile control (Honeywell or similar).</p>
-      <p class="price">$250 – $500</p>
-    </div>
-
-    <div class="service">
-      <h3>Low-Voltage Lighting Installation</h3>
-      <p>Highlight walkways, cacti, and water features with smart or solar lighting installs.</p>
-      <p class="price">$350 – $800</p>
-    </div>
-
-    <div class="service">
-      <h3>Power Washing & Surface Cleaning</h3>
-      <p>Clean patios, tile, stucco, and walls with pro-grade pressure wash equipment.</p>
-      <p class="price">$250 – $600</p>
+    <div class="testimonial">
+      <p>"Ready-Set completely transformed our backyard with a beautiful water feature and smart lighting system. The team was professional, timely, and the results exceeded our expectations. Our outdoor space has become our favorite part of the home."</p>
+      <div class="author">- Jennifer M., Chandler Estates</div>
     </div>
 
     <div class="cta-buttons">
-      <a href="contact.html">Request Outdoor Quote</a>
+      <a href="contact.html">Request Free Quote</a>
+      <a href="https://calendly.com/readysetsolutions" target="_blank">Schedule Consultation</a>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 NeuraMatrix.ai • Outdoor Services by CHARLEY’S LLC | Chandler, AZ</p>
+    <p>&copy; 2025 Ready-Set Solutions • Outdoor Services by CHARLEY'S LLC | Chandler, AZ</p>
     <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • (480) 840-7177</p>
   </footer>
->>>>>>> f838db0e378c6d0906a522d336fc940cb7f5ed7c
 </body>
 </html>
