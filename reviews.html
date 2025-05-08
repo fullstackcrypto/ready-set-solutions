@@ -148,4 +148,175 @@
     }
     .cta-button.outline {
       background: transparent;
-      border:
+      border: 2px solid #00ffff;
+      color: #00ffff;
+    }
+    .cta-button.outline:hover {
+      background: rgba(0, 255, 255, 0.1);
+    }
+    .review-platforms {
+      margin-top: 60px;
+      text-align: center;
+    }
+    .review-platforms h3 {
+      color: #00ffff;
+      margin-bottom: 20px;
+      font-size: 1.4rem;
+    }
+    .platform-logos {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .platform-logo {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 15px 30px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+    .platform-logo:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.2);
+    }
+    .platform-logo img {
+      height: 30px;
+      width: auto;
+    }
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #0a0a0a;
+      font-size: 0.85rem;
+      color: #777;
+      border-top: 1px solid rgba(0, 255, 255, 0.1);
+    }
+    footer a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 15px;
+      }
+      header h1 {
+        margin-bottom: 15px;
+      }
+      nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+      }
+      .reviews-grid {
+        grid-template-columns: 1fr;
+      }
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      .cta-button {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Client Reviews</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="indoor.html">Indoor</a>
+      <a href="outdoor.html">Outdoor</a>
+      <a href="reviews.html" class="active">Reviews</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>What Our Clients Are Saying</h2>
+
+    <div class="reviews-grid">
+      <div class="review">
+        <h4>Janelle M. – Chandler, AZ</h4>
+        <div class="rating">★★★★★</div>
+        <p>"I had my irrigation timer and some exterior lights installed by Ready-Set. They were quick, respectful, and everything works flawlessly. Highly recommend."</p>
+        <div class="service-type">Smart Irrigation & Lighting</div>
+      </div>
+
+      <div class="review">
+        <h4>Marcus R. – Tempe, AZ</h4>
+        <div class="rating">★★★★★</div>
+        <p>"Our backyard fountain hadn't worked in 3 years. It's running like new again. I'll be using them again for pressure washing next month."</p>
+        <div class="service-type">Water Feature Repair</div>
+      </div>
+
+      <div class="review">
+        <h4>Sierra T. – Ahwatukee</h4>
+        <div class="rating">★★★★★</div>
+        <p>"This team is discreet, on-time, and very fair. I used them for grab bars and wall patching. Would give more than 5 stars if I could."</p>
+        <div class="service-type">Accessibility Modifications</div>
+      </div>
+
+      <div class="review">
+        <h4>Frankie K. – Mesa</h4>
+        <div class="rating">★★★★★</div>
+        <p>"Super easy scheduling and they actually cleaned up when done. Best contractor alternative I've found."</p>
+        <div class="service-type">Minor Remodel & Repair</div>
+      </div>
+
+      <div class="review">
+        <h4>Christine W. – Chandler, AZ</h4>
+        <div class="rating">★★★★★</div>
+        <p>"They installed a smart thermostat, doorbell camera, and several smart switches in a single afternoon. Everything works with our Google Home and the setup was completely painless."</p>
+        <div class="service-type">Smart Home Installation</div>
+      </div>
+
+      <div class="review">
+        <h4>David P. – Gilbert, AZ</h4>
+        <div class="rating">★★★★★</div>
+        <p>"Ready-Set Solutions transformed our outdoor living space with landscape lighting. The team was professional, completed the work on schedule, and the results exceeded our expectations."</p>
+        <div class="service-type">Outdoor Lighting</div>
+      </div>
+    </div>
+
+    <div class="cta-section">
+      <h3>Experience Our 5-Star Service</h3>
+      <p>Join our satisfied customers by scheduling your own installation or repair service. We pride ourselves on quality workmanship, punctuality, and exceptional customer care.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="cta-button">Request a Quote</a>
+        <a href="https://calendly.com/readysetsolutions" target="_blank" class="cta-button outline">Schedule a Call</a>
+      </div>
+    </div>
+
+    <div class="review-platforms">
+      <h3>Find Us On These Platforms</h3>
+      <p>See more of our 5-star reviews on your favorite review platforms</p>
+      <div class="platform-logos">
+        <a href="https://www.google.com/maps/place/Ready-Set+Solutions" target="_blank" class="platform-logo">
+          <span>Google</span>
+        </a>
+        <a href="https://www.yelp.com/biz/ready-set-solutions-chandler" target="_blank" class="platform-logo">
+          <span>Yelp</span>
+        </a>
+        <a href="https://nextdoor.com/pages/ready-set-solutions-chandler-az/" target="_blank" class="platform-logo">
+          <span>Nextdoor</span>
+        </a>
+        <a href="https://www.angi.com/companylist/us/az/chandler/ready-set-solutions-reviews" target="_blank" class="platform-logo">
+          <span>Angi</span>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Ready-Set Solutions • Smart Services by CHARLEY'S LLC | Chandler, AZ</p>
+    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • (480) 840-7177</p>
+  </footer>
+</body>
+</html>
