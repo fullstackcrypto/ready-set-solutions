@@ -3,274 +3,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact Ready-Set Solutions for smart home installations, repairs, and outdoor services in Chandler, AZ. Get a free consultation.">
+  <meta name="description" content="Contact Ready-Set Solutions for smart home installations, water feature repairs, and outdoor services in Chandler, AZ. Get a free quote today.">
+  <meta name="keywords" content="contact, quote, smart home installation, water feature repair, Chandler AZ">
+  <meta name="author" content="Ready-Set Solutions">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Contact Us | Ready-Set Solutions">
+  <meta property="og:description" content="Contact Ready-Set Solutions for professional smart home installations and outdoor services in Chandler, AZ. Get a free quote today.">
+  <meta property="og:image" content="https://readyset.charleysllc.com/assets/contact-og.jpg">
+  <meta property="og:url" content="https://readyset.charleysllc.com/contact.html">
+  <meta property="og:type" content="website">
+  
   <title>Contact Us | Ready-Set Solutions</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Rajdhani', sans-serif;
-      background-color: #000;
-      color: #fff;
-    }
-    header {
-      background: rgba(0, 0, 0, 0.85);
-      padding: 14px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #00ffff33;
-    }
-    header h1 {
-      font-size: 1.5rem;
-      color: #00ffff;
-      margin: 0;
-    }
-    nav a {
-      color: #00ffff;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #00dddd;
-    }
-    nav a.active {
-      text-decoration: underline;
-      text-underline-offset: 5px;
-    }
-    section {
-      padding: 60px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2 {
-      text-align: center;
-      color: #00ffff;
-      margin-bottom: 30px;
-      font-size: 2.2rem;
-      text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
-    }
-    .contact-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 40px;
-      margin-top: 40px;
-    }
-    .contact-info {
-      background: #111;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.08);
-    }
-    .contact-info h3 {
-      color: #00ffff;
-      margin-bottom: 20px;
-      font-size: 1.5rem;
-    }
-    .contact-method {
-      margin-bottom: 25px;
-    }
-    .contact-method h4 {
-      color: #00ffff;
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-    }
-    .contact-method p {
-      color: #ccc;
-      margin: 0;
-    }
-    .contact-method a {
-      color: #00ffff;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    .contact-method a:hover {
-      color: #00dddd;
-      text-decoration: underline;
-    }
-    .service-areas {
-      margin-top: 30px;
-    }
-    .service-areas h4 {
-      color: #00ffff;
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-    }
-    .service-areas ul {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-      padding-left: 20px;
-      color: #ccc;
-    }
-    .hours {
-      margin-top: 30px;
-    }
-    .hours h4 {
-      color: #00ffff;
-      margin-bottom: 10px;
-      font-size: 1.1rem;
-    }
-    .hours p {
-      color: #ccc;
-      margin: 5px 0;
-    }
-    .contact-form {
-      background: #111;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.08);
-    }
-    .contact-form h3 {
-      color: #00ffff;
-      margin-bottom: 20px;
-      font-size: 1.5rem;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
-    .form-row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 15px;
-    }
-    .form-group {
-      display: flex;
-      flex-direction: column;
-    }
-    .form-group label {
-      margin-bottom: 5px;
-      color: #ccc;
-      font-size: 0.9rem;
-    }
-    .form-group input,
-    .form-group textarea,
-    .form-group select {
-      padding: 12px;
-      border: none;
-      border-radius: 6px;
-      background: #1a1a1a;
-      color: #fff;
-      font-family: inherit;
-      font-size: 1rem;
-      border: 1px solid #333;
-      transition: border-color 0.3s ease, box-shadow 0.3s ease;
-    }
-    .form-group input:focus,
-    .form-group textarea:focus,
-    .form-group select:focus {
-      outline: none;
-      border-color: #00ffff;
-      box-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
-    }
-    .form-group textarea {
-      height: 150px;
-      resize: vertical;
-    }
-    .form-group select {
-      appearance: none;
-      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%2300ffff' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: calc(100% - 12px) center;
-      padding-right: 35px;
-    }
-    button {
-      padding: 14px;
-      background: #00ffff;
-      border: none;
-      border-radius: 40px;
-      color: #000;
-      font-weight: bold;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: 0.3s ease;
-      margin-top: 10px;
-      box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
-    }
-    button:hover {
-      background: #00dddd;
-      transform: scale(1.03);
-    }
-    .upload-area {
-      border: 2px dashed #333;
-      border-radius: 6px;
-      padding: 20px;
-      text-align: center;
-      transition: border-color 0.3s ease;
-      cursor: pointer;
-    }
-    .upload-area:hover {
-      border-color: #00ffff;
-    }
-    .upload-area p {
-      color: #ccc;
-      margin: 0;
-    }
-    .upload-area span {
-      display: block;
-      color: #00ffff;
-      margin-top: 5px;
-      font-size: 0.9rem;
-    }
-    #file-input {
-      display: none;
-    }
-    .map-section {
-      margin-top: 60px;
-    }
-    .map-container {
-      height: 400px;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 0 20px rgba(0, 0, 255, 0.1);
-    }
-    .map-container iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background: #0a0a0a;
-      font-size: 0.85rem;
-      color: #777;
-      border-top: 1px solid rgba(0, 255, 255, 0.1);
-      margin-top: 60px;
-    }
-    footer a {
-      color: #00ffff;
-      text-decoration: none;
-    }
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        padding: 15px;
-      }
-      header h1 {
-        margin-bottom: 15px;
-      }
-      nav a {
-        margin: 0 10px;
-        font-size: 0.9rem;
-      }
-      .contact-container {
-        grid-template-columns: 1fr;
-      }
-      .form-row {
-        grid-template-columns: 1fr;
-      }
-      .service-areas ul {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -286,7 +40,7 @@
 
   <section>
     <h2>Contact Ready-Set Solutions</h2>
-    <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: #ccc;">Let us know about your project needs. Whether you're looking for a quote, have questions about our services, or need to schedule a consultation, we're here to help.</p>
+    <p class="text-center mb-4">Let us know about your project needs. Whether you're looking for a quote, have questions about our services, or need to schedule a consultation, we're here to help.</p>
 
     <div class="contact-container">
       <div class="contact-info">
@@ -295,17 +49,29 @@
         <div class="contact-method">
           <h4>Phone</h4>
           <p><a href="tel:4808407177">(480) 840-7177</a></p>
+          <p class="text-muted">Mon-Fri: 7am-6pm | Sat: 8am-2pm</p>
         </div>
         
         <div class="contact-method">
           <h4>Email</h4>
           <p><a href="mailto:support@charleysllc.com">support@charleysllc.com</a></p>
+          <p class="text-muted">We respond within 1 business day</p>
         </div>
         
         <div class="contact-method">
           <h4>Address</h4>
           <p>Chandler, AZ 85224</p>
           <p>Serving the East Valley & Greater Phoenix area</p>
+        </div>
+        
+        <!-- Quick Contact Options -->
+        <div class="mt-4 mb-4">
+          <h4>Quick Contact Options</h4>
+          <div class="d-flex mt-3" style="gap: 10px; flex-wrap: wrap;">
+            <a href="tel:4808407177" class="button">Call Now</a>
+            <a href="sms:4808407177" class="button outline">Text Us</a>
+            <a href="https://calendly.com/readysetsolutions" target="_blank" class="button outline">Schedule Call</a>
+          </div>
         </div>
         
         <div class="service-areas">
@@ -328,11 +94,23 @@
           <p>Saturday: 8:00 AM - 2:00 PM</p>
           <p>Sunday: Closed</p>
         </div>
+        
+        <!-- Featured Services -->
+        <div class="mt-4">
+          <h4>Our Popular Services</h4>
+          <div class="mt-3">
+            <a href="indoor.html#security" class="d-block mb-2">Smart Security Systems</a>
+            <a href="outdoor.html#water-features" class="d-block mb-2">Water Feature Repairs</a>
+            <a href="outdoor.html#irrigation" class="d-block mb-2">Smart Irrigation Systems</a>
+            <a href="outdoor.html#lighting" class="d-block mb-2">Landscape Lighting</a>
+            <a href="indoor.html#thermostat" class="d-block">Smart Thermostat Installation</a>
+          </div>
+        </div>
       </div>
       
       <div class="contact-form">
         <h3>Send Us a Message</h3>
-        <form action="https://formsubmit.co/support@charleysllc.com" method="POST" enctype="multipart/form-data">
+        <form action="https://formsubmit.co/support@charleysllc.com" method="POST" enctype="multipart/form-data" id="contactForm">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Your Name*</label>
@@ -354,19 +132,60 @@
             <label for="service">Service Type*</label>
             <select id="service" name="Service" required>
               <option value="" disabled selected>Select a service</option>
-              <option value="Smart Home Installation">Smart Home Installation</option>
-              <option value="Water Feature Repair">Water Feature Repair</option>
-              <option value="Accessibility Modifications">Accessibility Modifications</option>
-              <option value="Landscape Lighting">Landscape Lighting</option>
-              <option value="Smart Irrigation">Smart Irrigation</option>
-              <option value="Minor Repairs">Minor Repairs</option>
+              <optgroup label="Most Popular Services">
+                <option value="Smart Security Installation">Smart Security Installation</option>
+                <option value="Water Feature Repair">Water Feature Repair</option>
+                <option value="Smart Irrigation Installation">Smart Irrigation Installation</option>
+                <option value="Landscape Lighting">Landscape Lighting</option>
+              </optgroup>
+              <optgroup label="Indoor Services">
+                <option value="Smart Thermostat Installation">Smart Thermostat Installation</option>
+                <option value="Accessibility Modifications">Accessibility Modifications</option>
+                <option value="Minor Repairs">Minor Repairs</option>
+                <option value="Clutter Removal">Clutter Removal</option>
+                <option value="Leak Sensors">Leak Sensors</option>
+                <option value="Smart Home Hub Integration">Smart Home Hub Integration</option>
+              </optgroup>
+              <optgroup label="Outdoor Services">
+                <option value="Gravel Refresh">Gravel Refresh & Rock Border</option>
+                <option value="Power Washing">Power Washing</option>
+                <option value="Custom Water Feature">Custom Water Feature</option>
+                <option value="Outdoor Technology">Outdoor Technology</option>
+              </optgroup>
+              <optgroup label="Service Packages">
+                <option value="Smart Home Bundle">Smart Home Bundle (Save 10%)</option>
+                <option value="Summer Ready Package">Summer Ready Package (Save 15%)</option>
+              </optgroup>
               <option value="Other">Other (please specify)</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="timeline">Preferred Timeline</label>
+            <select id="timeline" name="Timeline">
+              <option value="As soon as possible">As soon as possible</option>
+              <option value="Within 1 week">Within 1 week</option>
+              <option value="Within 2 weeks">Within 2 weeks</option>
+              <option value="Within 1 month">Within 1 month</option>
+              <option value="Just researching for now">Just researching for now</option>
             </select>
           </div>
           
           <div class="form-group">
             <label for="message">Project Details*</label>
             <textarea id="message" name="Message" placeholder="Please describe what you need help with..." required></textarea>
+          </div>
+          
+          <div class="form-group">
+            <label for="hear-about">How did you hear about us?</label>
+            <select id="hear-about" name="ReferralSource">
+              <option value="Google Search">Google Search</option>
+              <option value="Yelp">Yelp</option>
+              <option value="Nextdoor">Nextdoor</option>
+              <option value="Friend or Family">Friend or Family</option>
+              <option value="Social Media">Social Media</option>
+              <option value="Other">Other</option>
+            </select>
           </div>
           
           <div class="form-group">
@@ -378,11 +197,36 @@
             <input type="file" id="file-input" name="attachment" accept="image/*">
           </div>
           
+          <div class="form-group">
+            <label class="checkbox-container">
+              <input type="checkbox" name="newsletter" checked>
+              <span class="text-muted">Sign up for occasional updates and special offers</span>
+            </label>
+          </div>
+          
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_next" value="https://readyset.charleysllc.com/thank-you.html">
+          <input type="hidden" name="_subject" id="emailSubject" value="New Service Request">
           
-          <button type="submit">Send Request</button>
+          <button type="submit" id="submitButton">Send Request</button>
         </form>
+      </div>
+    </div>
+    
+    <!-- Current Promotions Section -->
+    <div class="mt-5 p-4 bg-card rounded text-center">
+      <h3>Current Promotions</h3>
+      <div class="grid-2 mt-4">
+        <div class="card p-3">
+          <h4>Smart Security Package</h4>
+          <p>Complete home security system installation including doorbell camera, 2 outdoor cameras, and smart lock - <strong>$699</strong> <span style="text-decoration: line-through; color: #777;">$850</span></p>
+          <a href="contact.html?service=Smart%20Security%20Package" class="button mt-3">Claim Offer</a>
+        </div>
+        <div class="card p-3">
+          <h4>Summer Ready Package</h4>
+          <p>Get your outdoor space ready: water feature tune-up, smart irrigation installation, and power washing - <strong>Save 15%</strong> when booked together</p>
+          <a href="contact.html?service=Summer%20Ready%20Package" class="button mt-3">Claim Offer</a>
+        </div>
       </div>
     </div>
     
@@ -396,16 +240,88 @@
 
   <footer>
     <p>&copy; 2025 Ready-Set Solutions • Smart Services by CHARLEY'S LLC | Chandler, AZ</p>
-    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • (480) 840-7177</p>
+    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • <a href="tel:+14808407177">(480) 840-7177</a></p>
   </footer>
 
   <script>
-    const fileInput = document.getElementById('file-input');
-    const uploadArea = document.querySelector('.upload-area');
-    
-    fileInput.addEventListener('change', function() {
-      if (fileInput.files.length > 0) {
-        uploadArea.innerHTML = `<p>File selected: ${fileInput.files[0].name}</p><span>Click to change</span>`;
+    // Pre-select service if passed via URL parameter
+    document.addEventListener('DOMContentLoaded', function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const serviceParam = urlParams.get('service');
+      
+      if (serviceParam) {
+        const serviceSelect = document.getElementById('service');
+        const options = serviceSelect.options;
+        
+        // First, try to find an exact match
+        let found = false;
+        for (let i = 0; i < options.length; i++) {
+          if (options[i].value === serviceParam) {
+            serviceSelect.selectedIndex = i;
+            found = true;
+            break;
+          }
+        }
+        
+        // If no exact match, try a partial match
+        if (!found) {
+          for (let i = 0; i < options.length; i++) {
+            if (options[i].value && options[i].value.toLowerCase().includes(serviceParam.toLowerCase())) {
+              serviceSelect.selectedIndex = i;
+              found = true;
+              break;
+            }
+          }
+        }
+        
+        // Update subject line for the email
+        if (found) {
+          updateEmailSubject(serviceSelect.options[serviceSelect.selectedIndex].value);
+        }
+        
+        // Update message placeholder
+        updateMessagePlaceholder();
+      }
+      
+      // File input handling
+      const fileInput = document.getElementById('file-input');
+      const uploadArea = document.querySelector('.upload-area');
+      
+      fileInput.addEventListener('change', function() {
+        if (fileInput.files.length > 0) {
+          uploadArea.innerHTML = `<p>File selected: ${fileInput.files[0].name}</p><span>Click to change</span>`;
+        }
+      });
+      
+      // Service type change handler
+      const serviceSelect = document.getElementById('service');
+      serviceSelect.addEventListener('change', function() {
+        updateEmailSubject(this.value);
+        updateMessagePlaceholder();
+      });
+      
+      // Update email subject based on service
+      function updateEmailSubject(service) {
+        document.getElementById('emailSubject').value = `New Request: ${service}`;
+      }
+      
+      // Update message placeholder based on selected service
+      function updateMessagePlaceholder() {
+        const messageField = document.getElementById('message');
+        const serviceSelect = document.getElementById('service');
+        const selectedService = serviceSelect.options[serviceSelect.selectedIndex].value;
+        
+        if (selectedService.includes('Security')) {
+          messageField.placeholder = "Please describe your security needs. For example: How many entry points need to be secured? Are you interested in cameras, smart locks, or a complete system?";
+        } else if (selectedService.includes('Water Feature')) {
+          messageField.placeholder = "Please describe your water feature issue. For example: What type of water feature do you have? What problems are you experiencing (leaks, pump issues, etc.)?";
+        } else if (selectedService.includes('Irrigation')) {
+          messageField.placeholder = "Please describe your irrigation needs. For example: Do you have an existing system that needs upgrading? How large is your yard? Are there specific areas that need coverage?";
+        } else if (selectedService.includes('Light')) {
+          messageField.placeholder = "Please describe your lighting project. For example: What areas do you want to highlight? Are you interested in pathway lights, accent lighting, or security lighting?";
+        } else {
+          messageField.placeholder = "Please describe what you need help with...";
+        }
       }
     });
   </script>
