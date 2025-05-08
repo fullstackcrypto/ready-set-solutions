@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ready-Set Solutions | Smart Install Services</title>
+  <meta name="description" content="Ready-Set Solutions provides premium smart home installations, accessibility upgrades, and outdoor services for Arizona homeowners. Fast, clean, legal, and always under $1,000.">
+  <title>Ready-Set Solutions | Smart Install Services in Chandler, AZ</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -19,6 +23,10 @@
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #00ffff33;
+      position: fixed;
+      width: 100%;
+      box-sizing: border-box;
+      z-index: 100;
     }
     header h1 {
       font-size: 1.5rem;
@@ -34,6 +42,10 @@
     nav a:hover {
       color: #00dddd;
     }
+    nav a.active {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
     .hero {
       background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('assets/chandler-sunset-rocks.jpg') no-repeat center center/cover;
       height: 100vh;
@@ -48,6 +60,7 @@
       font-size: 2.8rem;
       color: #00ffff;
       text-shadow: 0 0 18px #00ffff88;
+      margin-bottom: 20px;
     }
     .hero p {
       font-size: 1.2rem;
@@ -93,6 +106,144 @@
       text-decoration: none;
       border-radius: 30px;
       font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .service-card a:hover {
+      background: #00dddd;
+      transform: scale(1.05);
+    }
+    .featured-section {
+      padding: 80px 20px;
+      background: #0a0a0a;
+      text-align: center;
+    }
+    .featured-section h2 {
+      font-size: 2.2rem;
+      color: #00ffff;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .feature-item {
+      background: #111;
+      padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+    }
+    .feature-item h3 {
+      color: #00ffff;
+      margin-bottom: 15px;
+    }
+    .feature-item p {
+      color: #ccc;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+    .testimonials-section {
+      padding: 80px 20px;
+      text-align: center;
+      background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.6)), url('assets/chandler-sunset-rocks.jpg') no-repeat center center/cover;
+      background-attachment: fixed;
+    }
+    .testimonials-section h2 {
+      font-size: 2.2rem;
+      color: #00ffff;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    }
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .testimonial-card {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      text-align: left;
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: """;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-size: 60px;
+      color: rgba(0, 255, 255, 0.2);
+      font-family: serif;
+    }
+    .testimonial-card p {
+      font-style: italic;
+      margin-bottom: 20px;
+      color: #eee;
+      line-height: 1.6;
+    }
+    .testimonial-card .author {
+      color: #00ffff;
+      font-weight: bold;
+    }
+    .cta-section {
+      padding: 80px 20px;
+      text-align: center;
+      background: #0a0a0a;
+    }
+    .cta-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 50px 30px;
+      background: #111;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+    }
+    .cta-container h2 {
+      font-size: 2.2rem;
+      color: #00ffff;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+    }
+    .cta-container p {
+      color: #ccc;
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .cta-button {
+      padding: 14px 28px;
+      background: #00ffff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 40px;
+      font-weight: bold;
+      transition: 0.3s ease;
+      box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+    }
+    .cta-button:hover {
+      background: #00dddd;
+      transform: scale(1.05);
+    }
+    .cta-button.outline {
+      background: transparent;
+      border: 2px solid #00ffff;
+      color: #00ffff;
+    }
+    .cta-button.outline:hover {
+      background: rgba(0, 255, 255, 0.1);
     }
     footer {
       text-align: center;
@@ -100,6 +251,40 @@
       background: #0a0a0a;
       font-size: 0.85rem;
       color: #777;
+      border-top: 1px solid rgba(0, 255, 255, 0.1);
+    }
+    footer a {
+      color: #00ffff;
+      text-decoration: none;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        padding: 15px;
+      }
+      header h1 {
+        margin-bottom: 15px;
+      }
+      nav a {
+        margin: 0 10px;
+        font-size: 0.9rem;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+      .service-options {
+        flex-direction: column;
+        align-items: center;
+      }
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      .cta-button {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
@@ -107,7 +292,7 @@
   <header>
     <h1>Ready-Set Solutions</h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="indoor.html">Indoor</a>
       <a href="outdoor.html">Outdoor</a>
       <a href="reviews.html">Reviews</a>
@@ -121,7 +306,7 @@
     <div class="service-options">
       <div class="service-card">
         <h3>Indoor Services</h3>
-        <p>Smart devices, safety upgrades, patchwork, clutter clearing and more.</p>
+        <p>Smart devices, safety upgrades, accessibility modifications, clutter clearing and more.</p>
         <a href="indoor.html">Explore Indoor</a>
       </div>
       <div class="service-card">
@@ -132,9 +317,60 @@
     </div>
   </section>
 
+  <section class="featured-section">
+    <h2>Why Choose Ready-Set Solutions</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>Veteran Owned & Operated</h3>
+        <p>With military precision and attention to detail, we ensure every job is completed to the highest standards.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Fast & Reliable Service</h3>
+        <p>Most projects completed within days, not weeks. We value your time and stick to our schedules.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Smart Technology Experts</h3>
+        <p>Specialized in the latest home automation, security, and energy efficiency technologies.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Transparent Pricing</h3>
+        <p>No hidden fees or surprise costs. We provide detailed quotes before work begins.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>"I had my irrigation timer and some exterior lights installed by Ready-Set. They were quick, respectful, and everything works flawlessly. Highly recommend."</p>
+        <div class="author">Janelle M. – Chandler, AZ</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"Our backyard fountain hadn't worked in 3 years. It's running like new again. I'll be using them again for pressure washing next month."</p>
+        <div class="author">Marcus R. – Tempe, AZ</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"This team is discreet, on-time, and very fair. I used them for grab bars and wall patching. Would give more than 5 stars if I could."</p>
+        <div class="author">Sierra T. – Ahwatukee</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-container">
+      <h2>Ready to Transform Your Home?</h2>
+      <p>Let's discuss your project needs and provide you with a free, no-obligation quote.</p>
+      <div class="cta-buttons">
+        <a href="contact.html" class="cta-button">Request a Quote</a>
+        <a href="https://calendly.com/readysetsolutions" target="_blank" class="cta-button outline">Schedule a Call</a>
+      </div>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 NeuraMatrix.ai • Smart Services by CHARLEY’S LLC | Chandler, AZ</p>
-    <p>Contact: support@charleysllc.com • (480) 840-7177</p>
+    <p>&copy; 2025 Ready-Set Solutions • Smart Services by CHARLEY'S LLC | Chandler, AZ</p>
+    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • (480) 840-7177</p>
   </footer>
 </body>
 </html>
