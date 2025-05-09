@@ -3,111 +3,81 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ready-Set Solutions | Smart Install Services</title>
+  <meta name="description" content="Ready-Set Solutions provides premium smart security systems, water feature repairs, and smart irrigation in Chandler, AZ. Fast service from $250-$850.">
+  <meta name="keywords" content="smart security systems, water feature repair, irrigation systems, landscape lighting, Chandler, Ocotillo, Sun Groves, Fulton Ranch">
+  <meta name="author" content="Ready-Set Solutions">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="Smart Security & Water Feature Specialists | Ready-Set Solutions">
+  <meta property="og:description" content="Professional smart security systems and water feature repairs in Chandler, AZ. Fast service within 48 hours, always under $1,000.">
+  <meta property="og:image" content="https://readyset.charleysllc.com/assets/og-image.jpg">
+  <meta property="og:url" content="https://readyset.charleysllc.com">
+  <meta property="og:type" content="website">
+  
+  <title>Smart Security & Water Feature Specialists | Ready-Set Solutions</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Rajdhani', sans-serif;
-      background-color: #000;
-      color: #fff;
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Structured Data for Local Business -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HomeAndConstructionBusiness",
+      "name": "Ready-Set Solutions",
+      "image": "https://readyset.charleysllc.com/assets/logo.png",
+      "logo": "https://readyset.charleysllc.com/assets/logo.png",
+      "@id": "https://readyset.charleysllc.com",
+      "url": "https://readyset.charleysllc.com",
+      "telephone": "+14808407177",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chandler, AZ",
+        "addressLocality": "Chandler",
+        "addressRegion": "AZ",
+        "postalCode": "85224",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.3062,
+        "longitude": -111.8413
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "07:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "14:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/readysetsolutions",
+        "https://www.instagram.com/readysetsolutions"
+      ],
+      "priceRange": "$250-$850",
+      "areaServed": ["Chandler", "Gilbert", "Mesa", "Tempe", "Ocotillo", "Sun Groves", "Fulton Ranch"]
     }
-    header {
-      background: rgba(0, 0, 0, 0.85);
-      padding: 14px 30px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #00ffff33;
-    }
-    header h1 {
-      font-size: 1.5rem;
-      color: #00ffff;
-      margin: 0;
-    }
-    nav a {
-      color: #00ffff;
-      margin-left: 20px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      color: #00dddd;
-    }
-    .hero {
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.85)), url('assets/chandler-sunset-rocks.jpg') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 0 20px;
-    }
-    .hero h2 {
-      font-size: 2.8rem;
-      color: #00ffff;
-      text-shadow: 0 0 18px #00ffff88;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      color: #ccc;
-      margin: 20px auto;
-    }
-    .service-options {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 40px;
-      margin-top: 40px;
-    }
-    .service-card {
-      background: #111;
-      border: 1px solid #00ffff33;
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
-      width: 260px;
-      transition: 0.3s ease;
-      box-shadow: 0 0 15px #00ffff22;
-    }
-    .service-card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px #00ffff44;
-    }
-    .service-card h3 {
-      color: #00ffff;
-      margin-bottom: 10px;
-    }
-    .service-card p {
-      color: #aaa;
-      font-size: 0.95rem;
-    }
-    .service-card a {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 20px;
-      background: #00ffff;
-      color: #000;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 40px 20px;
-      background: #0a0a0a;
-      font-size: 0.85rem;
-      color: #777;
-    }
-  </style>
+  </script>
 </head>
 <body>
   <header>
     <h1>Ready-Set Solutions</h1>
     <nav>
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="indoor.html">Indoor</a>
       <a href="outdoor.html">Outdoor</a>
       <a href="reviews.html">Reviews</a>
@@ -116,25 +86,166 @@
   </header>
 
   <section class="hero">
-    <h2>Smart Installations & Repairs for Arizona Homes</h2>
-    <p>Upgrade your interior or exterior — fast, clean, legal, and always under $1,000.</p>
+    <h2>Smart Security & Water Feature Specialists</h2>
+    <p>Protect your home and enhance your outdoor space with our fast, professional installations. Serving Chandler and East Valley since 2022.</p>
     <div class="service-options">
       <div class="service-card">
-        <h3>Indoor Services</h3>
-        <p>Smart devices, safety upgrades, patchwork, clutter clearing and more.</p>
-        <a href="indoor.html">Explore Indoor</a>
+        <h3>Smart Security Systems</h3>
+        <p>Complete home protection with smart locks, cameras, and monitoring. Most installations under 3 hours - perfect for homeowners and Airbnb hosts.</p>
+        <a href="indoor.html#security" class="cta-button">Explore Security</a>
       </div>
       <div class="service-card">
-        <h3>Outdoor Services</h3>
-        <p>Water features, lighting, landscaping, desert restoration, and pressure cleaning.</p>
-        <a href="outdoor.html">Explore Outdoor</a>
+        <h3>Water Feature Repairs</h3>
+        <p>Restore your fountains, waterfalls, and water features with our specialized repair services. 90% of repairs completed same day.</p>
+        <a href="outdoor.html#water-features" class="cta-button">Explore Water Features</a>
       </div>
     </div>
   </section>
 
+  <section class="featured-section">
+    <h2>Top Services for Chandler Homes</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>Smart Security Systems</h3>
+        <p>Professional security installation with doorbell cameras, smart locks, and mobile monitoring. Military-grade security for Chandler homes.</p>
+        <ul class="mb-3">
+          <li>Most systems installed in under 3 hours</li>
+          <li>Remote access from your smartphone</li>
+          <li>Perfect for Airbnb and vacation rentals</li>
+        </ul>
+        <p class="price">$299 - $499 <span class="availability">Book This Week</span></p>
+        <a href="indoor.html#security" class="button">Learn More</a>
+      </div>
+      <div class="feature-item">
+        <h3>Water Feature Repairs</h3>
+        <p>Expert restoration of fountains, waterfalls, and water features with our specialized repair team. Extend the life of your investment.</p>
+        <ul class="mb-3">
+          <li>Most repairs completed same day</li>
+          <li>Fix pump issues, leaks, and electrical problems</li>
+          <li>Service all brands and models</li>
+        </ul>
+        <p class="price">$499 Standard / $799 Complete <span class="availability">High Demand</span></p>
+        <a href="outdoor.html#water-features" class="button">Learn More</a>
+      </div>
+      <div class="feature-item">
+        <h3>Smart Irrigation Systems</h3>
+        <p>Water-saving irrigation controls with weather adaptation and smartphone access. Perfect for Arizona's desert climate.</p>
+        <ul class="mb-3">
+          <li>Save up to 50% on water bills</li>
+          <li>Water restriction compliance built-in</li>
+          <li>Eligible for SRP/APS rebates</li>
+        </ul>
+        <p class="price">$349 - $599 <span class="availability">Summer Special</span></p>
+        <a href="outdoor.html#irrigation" class="button">Learn More</a>
+      </div>
+      <div class="feature-item">
+        <h3>Landscape Lighting</h3>
+        <p>Enhance your property's beauty and security with custom LED landscape lighting. Energy-efficient and designed for desert homes.</p>
+        <ul class="mb-3">
+          <li>Evening installations available</li>
+          <li>80% less energy than traditional lighting</li>
+          <li>Increases home value by 5-15%</li>
+        </ul>
+        <p class="price">$399 - $799 <span class="availability">Book Now - Save 10%</span></p>
+        <a href="outdoor.html#lighting" class="button">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-section" style="background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.7));">
+    <h2>Why Chandler Homeowners Choose Us</h2>
+    <div class="features-grid">
+      <div class="feature-item">
+        <h3>Fast Response Times</h3>
+        <p>Most projects completed within 24-48 hours of your call. We know wait times are frustrating in Arizona's heat.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Veteran Owned & Operated</h3>
+        <p>Military precision and attention to detail on every job. We're proud to serve our Chandler community.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Complete in One Visit</h3>
+        <p>85% of our projects are completed in a single visit - no waiting for return trips or multiple technicians.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Transparent Pricing</h3>
+        <p>No hidden fees or surprise costs. We provide firm quotes with no upselling pressure.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section">
+    <h2>What Chandler Homeowners Say</h2>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <p>"Their smart security installation was flawless and quick. The system has already alerted us to suspicious activity twice. Worth every penny for the peace of mind."</p>
+        <div class="author">Christine W. – Ocotillo, Chandler</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"Our fountain hadn't worked in years. Ready-Set had it running perfectly in just one afternoon. Price was exactly as quoted - no surprises."</p>
+        <div class="author">Marcus R. – Sun Groves, Chandler</div>
+      </div>
+      <div class="testimonial-card">
+        <p>"They installed a smart irrigation system that's already cut our water bill by 40%. In this Arizona heat, that's incredible savings."</p>
+        <div class="author">Jennifer K. – Fulton Ranch, Chandler</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-container">
+      <h2>Summer Special Packages</h2>
+      <p>Book any two of our featured services together and save 15%. Perfect for getting your home summer-ready!</p>
+      <div class="service-packages">
+        <div class="package-card">
+          <h3>Security + Irrigation Package</h3>
+          <p>Complete home security system with smart irrigation control.</p>
+          <p class="price"><span class="old-price">$848</span> <span class="new-price">$720</span></p>
+        </div>
+        <div class="package-card">
+          <h3>Water Feature + Lighting Package</h3>
+          <p>Water feature restoration with accent lighting installation.</p>
+          <p class="price"><span class="old-price">$1,098</span> <span class="new-price">$933</span></p>
+        </div>
+      </div>
+      <div class="cta-buttons mt-4">
+        <a href="contact.html?package=summer-special" class="cta-button">Get Package Pricing</a>
+        <a href="https://calendly.com/readysetsolutions" target="_blank" class="cta-button outline">Schedule a Call</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section container">
+    <h2>Serving Chandler and the East Valley</h2>
+    <p class="text-center mb-4">We specialize in these Chandler neighborhoods: Ocotillo, Sun Groves, Fulton Ranch, Downtown, Andersen Springs, and The Islands.</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106172.13910679866!2d-111.91304795!3d33.30169975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872a55595c22b693%3A0xc3e5f858253626c8!2sChandler%2C%20AZ%2085224!5e0!3m2!1sen!2sus!4v1655386001965!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 NeuraMatrix.ai • Smart Services by CHARLEY’S LLC | Chandler, AZ</p>
-    <p>Contact: support@charleysllc.com • (480) 840-7177</p>
+    <p>&copy; 2025 Ready-Set Solutions • Smart Services by CHARLEY'S LLC | Chandler, AZ</p>
+    <p>Contact: <a href="mailto:support@charleysllc.com">support@charleysllc.com</a> • <a href="tel:+14808407177">(480) 840-7177</a></p>
   </footer>
-</body>
-</html>
+
+  <!-- Enhanced tracking -->
+  <script>
+    // Track service interest
+    document.addEventListener('DOMContentLoaded', function() {
+      const serviceLinks = document.querySelectorAll('a[href*="#"]');
+      serviceLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          const service = this.getAttribute('href').split('#')[1];
+          if (window.dataLayer) {
+            window.dataLayer.push({
+              'event': 'service_interest',
+              'service_type': service
+            });
+          }
+        });
+      });
+    });
+  </script>
+  
+  <!-- Analytics Script -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>

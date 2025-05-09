@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /thank-you.html
+Disallow: /demo-*.html
+
+# Priority pages
+Allow: /indoor.html$
+Allow: /outdoor.html$
+Allow: /indoor.html#security
+Allow: /outdoor.html#water-features
+Allow: /outdoor.html#irrigation
+Allow: /outdoor.html#lighting
+
+Sitemap: https://readyset.charleysllc.com/sitemap.xml
