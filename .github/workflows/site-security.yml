@@ -1,0 +1,58 @@
+name: Site Privacy & Security Checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '31 13 * * 2'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  static-checks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v6
+      - name: Validate privacy controls
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import xml.etree.ElementTree as ET
+
+          contact = Path('contact.html').read_text(encoding='utf-8')
+          privacy = Path('privacy.html').read_text(encoding='utf-8')
+          sitemap = Path('sitemap.xml').read_text(encoding='utf-8')
+
+          assert 'https://formsubmit.co/support@charleysllc.com' in contact
+          assert 'href="privacy.html"' in contact
+          assert 'Content-Security-Policy' in contact
+          assert 'form-action https://formsubmit.co' in contact
+          assert 'name="_honey"' in contact
+          assert 'type="file"' not in contact
+          assert 'multipart/form-data' not in contact
+          assert '_captcha' not in contact
+          assert 'innerHTML' not in contact
+          assert 'name="newsletter" checked' not in contact
+          assert 'name="newsletter" value="yes"' in contact
+          assert 'Do not include passwords' in contact
+          assert 'Content-Security-Policy' in privacy
+          assert 'FormSubmit' in privacy
+          assert 'support@charleysllc.com' in privacy
+
+          root = ET.fromstring(sitemap)
+          ns = {'sm': 'http://www.sitemaps.org/schemas/sitemap/0.9'}
+          urls = {node.text for node in root.findall('sm:url/sm:loc', ns)}
+          assert 'https://readyset.charleysllc.com/privacy.html' in urls
+
+          form = re.search(r'<form\b[^>]*action="([^"]+)"', contact)
+          assert form and form.group(1).startswith('https://')
+
+          print('Static privacy/security checks passed.')
+          PY
