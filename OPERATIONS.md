@@ -33,7 +33,7 @@ This order is an operational hypothesis, not a verified lead-volume ranking. Tra
 These are prospecting opportunities, not endorsements, verified open contracts, or guaranteed acceptance.
 
 ## 30-day outreach sprint
-**Week 1:** Confirm contact form delivers to support@charleysllc.com; set up or update Google Business Profile with truthful category/service area and genuine photos. Prepare a one-page service sheet, W-9, certificate of insurance if held, and a professional quote template.
+**Week 1:** Confirm contact form delivers to readyset@charleysllc.com; set up or update Google Business Profile with truthful category/service area and genuine photos. Prepare a one-page service sheet, W-9, certificate of insurance if held, and a professional quote template.
 **Week 2:** Contact 5 property managers or agents per business day. Ask about approved-vendor requirements and offer a small permitted trial cleanup with photo documentation. Record results in a private pipeline.
 **Week 3:** Post one genuine before/after case study with permission. Ask completed customers for honest Google reviews; do not offer incentives conditioned on rating. Follow up with previously contacted managers.
 **Week 4:** Compare lead sources, job profit after travel and materials, repeat requests, and unpaid invoices. Keep the top two acquisition channels. Suggest an ongoing plan only where the work is profitable and within permitted scope.

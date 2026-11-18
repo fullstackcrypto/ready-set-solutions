@@ -78,7 +78,7 @@ for page in PAGES:
 contact = read("contact.html")
 forms = re.findall(r"<form\b([^>]*)>", contact)
 check(len(forms) == 1, "contact.html: expected exactly one form")
-check('action="https://formsubmit.co/support@charleysllc.com"' in contact, "contact.html: form action changed")
+check('action="https://formsubmit.co/readyset@charleysllc.com"' in contact, "contact.html: form action changed")
 check('method="POST"' in contact, "contact.html: form must POST")
 check("form-action https://formsubmit.co" in csp(contact), "contact.html: CSP form-action must be FormSubmit only")
 check('name="_honey"' in contact, "contact.html: honeypot field missing")
@@ -104,7 +104,7 @@ check("innerHTML" not in js and "eval(" not in js and "document.write" not in js
 # --- Privacy notice, disclosures -------------------------------------------
 privacy = read("privacy.html")
 check("FormSubmit" in privacy, "privacy.html: must name the form provider")
-check("support@charleysllc.com" in privacy, "privacy.html: contact email missing")
+check("readyset@charleysllc.com" in privacy, "privacy.html: contact email missing")
 index = read("index.html")
 check(re.search(r"not a licensed contractor", index, re.I), "index.html: license disclosure missing")
 
