@@ -65,6 +65,15 @@ for page in PAGES:
             continue
         check((page.parent / href).exists(), f"{name}: broken link {href}")
 
+# --- Retired pages redirect to the homepage ----------------------------------
+for name in ("indoor.html", "outdoor.html", "reviews.html", "services/index.html"):
+    html = read(name)
+    check(f'<meta http-equiv="refresh" content="0; url={SITE}">' in html, f"{name}: must redirect to the homepage")
+    check(f'<link rel="canonical" href="{SITE}">' in html, f"{name}: canonical must be the homepage")
+for page in PAGES:
+    check(not re.search(r"smart home|handyman", page.read_text(encoding="utf-8"), re.I),
+          f"{page.relative_to(ROOT)}: retired service wording found")
+
 # --- Contact form -----------------------------------------------------------
 contact = read("contact.html")
 forms = re.findall(r"<form\b([^>]*)>", contact)
