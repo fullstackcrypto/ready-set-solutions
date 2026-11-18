@@ -9,6 +9,10 @@ Property cleanup and maintenance website for Ready-Set Solutions, operated by CH
 - **Inquiries:** contact.html posts to the existing FormSubmit endpoint for support@charleysllc.com. Confirm that the destination inbox has approved FormSubmit activation before relying on customer leads.
 - **No backend required:** static HTML and styles.css. There is no subscription, checkout, or automated billing system in this repository.
 
+For local prospecting, a 30-day outreach cadence, a private lead-tracking schema, and Stripe invoicing workflow, see [OPERATIONS.md](OPERATIONS.md).
+
+**Billing choice:** A Ready-Set Solutions Stripe account is connected. Use Stripe Dashboard's invoice templates and Stripe-hosted invoice pages after quote approval. There is no need to add Stripe checkout JavaScript to the static website.
+
 ## Customer process
 1. Receive inquiry with city, property type, service request and contact details.
 2. Ask for photos or inspect in person; document access, scope, exclusions, and any hauling requirements.
