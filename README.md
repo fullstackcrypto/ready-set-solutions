@@ -38,7 +38,7 @@ For local prospecting, a 30-day outreach cadence, a private lead-tracking schema
 Invoice should identify the business, invoice number, date, customer, job address, agreed scope, actual approved charges, payment instructions and due date. Use the business's existing compliant invoicing/payment processor; no customer card data should be collected in the website form.
 
 ## Before launch / compliance checks
-- Confirm the published phone number (480) 840-7177 and support@charleysllc.com are business-controlled and the inbox receives FormSubmit inquiries.
+- No business phone number is published yet; add one only once a business-controlled line exists. Confirm support@charleysllc.com is business-controlled and the inbox receives FormSubmit inquiries.
 - Verify current Arizona Registrar of Contractors license status. The website currently says **Not a licensed contractor**, pending verification; update that statement if a valid license applies. Do not advertise regulated trade work or work requiring permits without appropriate licensing. Arizona's handyman exemption is generally limited to projects under $1,000 including labor and materials and no permit requirement.
 - Confirm city-specific rules and required permits for commercial waste hauling; Chandler has a separate commercial waste-hauler permit process. Arrange authorized haulers rather than assuming pickup or landfill privileges.
 - Check business insurance, taxes, and municipal rules for any added service.
